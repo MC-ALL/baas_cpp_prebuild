@@ -1,0 +1,381 @@
+[2025-03-28 16:01:42.380] [info] BAAS     VERSION : 1.0.0
+[2025-03-28 16:01:42.380] [info] BAAS OCR VERSION : 1.1.1
+[2025-03-28 16:01:42.380] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin
+[2025-03-28 16:01:42.380] [info] <<< Config Load >>>
+[2025-03-28 16:01:42.380] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/static.json
+[2025-03-28 16:01:42.380] [info] <<< OCR Valid Languages >>>
+[2025-03-28 16:01:42.380] [info] en-us
+[2025-03-28 16:01:42.380] [info] ja-jp
+[2025-03-28 16:01:42.380] [info] ko-kr
+[2025-03-28 16:01:42.380] [info] ru-ru
+[2025-03-28 16:01:42.380] [info] zh-cn
+[2025-03-28 16:01:42.380] [info] zh-cn_v3
+[2025-03-28 16:01:42.380] [info] zh-tw
+[2025-03-28 16:01:42.380] [info] <<< Config Load >>>
+[2025-03-28 16:01:42.380] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/global_setting.json
+[2025-03-28 16:01:42.380] [info] <<< Config Dir >>>
+[2025-03-28 16:01:42.380] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/config
+[2025-03-28 16:01:42.380] [info] <<< Config Load >>>
+[2025-03-28 16:01:42.380] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/config/global_setting.json
+[2025-03-28 16:01:42.380] [info] Global config update
+[2025-03-28 16:01:42.380] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:42.381] [info] |                            BAAS Ocr Server Init.                             |
+[2025-03-28 16:01:42.381] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:42.381] [info] Server serial : localhost:1145
+[2025-03-28 16:01:42.381] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:42.381] [info] |                               Server started.                                |
+[2025-03-28 16:01:42.381] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:42.479] [info] Enable thread pool
+[2025-03-28 16:01:42.479] [info] <<< Request Body >>>
+[2025-03-28 16:01:42.479] [info] 
+{
+    "thread_count": 4
+}
+[2025-03-28 16:01:42.479] [info] <<< thread_count : 4 >>>
+[2025-03-28 16:01:42.481] [info] <<< Init Model >>>
+[2025-03-28 16:01:42.481] [info] <<< Request Body >>>
+[2025-03-28 16:01:42.481] [info] 
+{
+    "EnableCpuMemoryArena": true,
+    "gpu_id": -1,
+    "language": [
+        "ko-kr",
+        "ja-jp",
+        "zh-tw",
+        "zh-cn",
+        "en-us",
+        "ru-ru",
+        "zh-cn_v3"
+    ],
+    "num_thread": 4
+}
+[2025-03-28 16:01:42.481] [info] <<< OCR Init >>>
+[2025-03-28 16:01:42.481] [info] language: ko-kr
+[2025-03-28 16:01:42.481] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.481] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.481] [info] Rec     : rec_korean_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.481] [info] Key     : dict_korean.txt
+[2025-03-28 16:01:42.481] [info] GPU ID      : -1
+[2025-03-28 16:01:42.481] [info] Num Thread  : 4
+[2025-03-28 16:01:42.481] [info] Memory Pool : 1
+[2025-03-28 16:01:42.495] [info] Det use CPU
+[2025-03-28 16:01:42.495] [info] Cls use CPU.
+[2025-03-28 16:01:42.495] [info] Rec use CPU.
+[2025-03-28 16:01:42.495] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] CrnnNet  : rec_korean_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] <<< OCR Init >>>
+[2025-03-28 16:01:42.495] [info] language: ja-jp
+[2025-03-28 16:01:42.495] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Rec     : rec_japan_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Key     : dict_japan.txt
+[2025-03-28 16:01:42.495] [info] GPU ID      : -1
+[2025-03-28 16:01:42.495] [info] Num Thread  : 4
+[2025-03-28 16:01:42.495] [info] Memory Pool : 1
+[2025-03-28 16:01:42.495] [info] Det Already Inited
+[2025-03-28 16:01:42.495] [info] Cls Already Inited
+[2025-03-28 16:01:42.495] [info] Rec use CPU.
+[2025-03-28 16:01:42.495] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 3
+[2025-03-28 16:01:42.495] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 3
+[2025-03-28 16:01:42.495] [info] CrnnNet  : rec_japan_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] <<< OCR Init >>>
+[2025-03-28 16:01:42.495] [info] language: zh-tw
+[2025-03-28 16:01:42.495] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Rec     : rec_chinese_cht_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Key     : dict_chinese_cht.txt
+[2025-03-28 16:01:42.495] [info] GPU ID      : -1
+[2025-03-28 16:01:42.495] [info] Num Thread  : 4
+[2025-03-28 16:01:42.495] [info] Memory Pool : 1
+[2025-03-28 16:01:42.495] [info] Det Already Inited
+[2025-03-28 16:01:42.495] [info] Cls Already Inited
+[2025-03-28 16:01:42.495] [info] Rec use CPU.
+[2025-03-28 16:01:42.495] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 4
+[2025-03-28 16:01:42.495] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 4
+[2025-03-28 16:01:42.495] [info] CrnnNet  : rec_chinese_cht_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] <<< OCR Init >>>
+[2025-03-28 16:01:42.495] [info] language: zh-cn
+[2025-03-28 16:01:42.495] [info] Det     : ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Rec     : rec_ch_PP-OCRv4_infer.onnx
+[2025-03-28 16:01:42.495] [info] Key     : dict_chinese.txt
+[2025-03-28 16:01:42.495] [info] GPU ID      : -1
+[2025-03-28 16:01:42.495] [info] Num Thread  : 4
+[2025-03-28 16:01:42.495] [info] Memory Pool : 1
+[2025-03-28 16:01:42.495] [info] Det use CPU
+[2025-03-28 16:01:42.495] [info] Cls Already Inited
+[2025-03-28 16:01:42.495] [info] Rec use CPU.
+[2025-03-28 16:01:42.495] [info] DBNet    : ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 5
+[2025-03-28 16:01:42.495] [info] CrnnNet  : rec_ch_PP-OCRv4_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] <<< OCR Init >>>
+[2025-03-28 16:01:42.495] [info] language: en-us
+[2025-03-28 16:01:42.495] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Rec     : rec_en_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Key     : dict_en.txt
+[2025-03-28 16:01:42.495] [info] GPU ID      : -1
+[2025-03-28 16:01:42.495] [info] Num Thread  : 4
+[2025-03-28 16:01:42.495] [info] Memory Pool : 1
+[2025-03-28 16:01:42.495] [info] Det Already Inited
+[2025-03-28 16:01:42.495] [info] Cls Already Inited
+[2025-03-28 16:01:42.495] [info] Rec use CPU.
+[2025-03-28 16:01:42.495] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 5
+[2025-03-28 16:01:42.495] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 6
+[2025-03-28 16:01:42.495] [info] CrnnNet  : rec_en_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] <<< OCR Init >>>
+[2025-03-28 16:01:42.495] [info] language: ru-ru
+[2025-03-28 16:01:42.495] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Rec     : rec_cyrillic_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Key     : dict_cyrillic.txt
+[2025-03-28 16:01:42.495] [info] GPU ID      : -1
+[2025-03-28 16:01:42.495] [info] Num Thread  : 4
+[2025-03-28 16:01:42.495] [info] Memory Pool : 1
+[2025-03-28 16:01:42.495] [info] Det Already Inited
+[2025-03-28 16:01:42.495] [info] Cls Already Inited
+[2025-03-28 16:01:42.495] [info] Rec use CPU.
+[2025-03-28 16:01:42.495] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 6
+[2025-03-28 16:01:42.495] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 7
+[2025-03-28 16:01:42.495] [info] CrnnNet  : rec_cyrillic_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:42.495] [info] <<< OCR Init >>>
+[2025-03-28 16:01:42.495] [info] language: zh-cn_v3
+[2025-03-28 16:01:42.495] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Rec     : ch_PP-OCRv3_rec_infer.onnx
+[2025-03-28 16:01:42.495] [info] Key     : dict_chinese.txt
+[2025-03-28 16:01:42.495] [info] GPU ID      : -1
+[2025-03-28 16:01:42.495] [info] Num Thread  : 4
+[2025-03-28 16:01:42.495] [info] Memory Pool : 1
+[2025-03-28 16:01:42.495] [info] Det Already Inited
+[2025-03-28 16:01:42.495] [info] Cls Already Inited
+[2025-03-28 16:01:42.495] [info] Rec use CPU.
+[2025-03-28 16:01:42.495] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 7
+[2025-03-28 16:01:42.495] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 8
+[2025-03-28 16:01:42.495] [info] CrnnNet  : ch_PP-OCRv3_rec_infer.onnx
+[2025-03-28 16:01:42.495] [info] Use count: 2
+[2025-03-28 16:01:43.121] [info] <<< Init Model >>>
+[2025-03-28 16:01:43.121] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.121] [info] 
+{
+    "EnableCpuMemoryArena": false,
+    "gpu_id": -1,
+    "language": "en-us",
+    "num_thread": 4
+}
+[2025-03-28 16:01:43.121] [error] Value With Key [ language ] Type Error. Real : string .Expected : St6vectorINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEESaIS5_EE
+[2025-03-28 16:01:43.125] [info] <<< Ocr Create Shared Memory >>>
+[2025-03-28 16:01:43.125] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.125] [info] 
+{
+    "shared_memory_name": "/test",
+    "size": 2764800
+}
+[2025-03-28 16:01:43.127] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.127] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.127] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1318,
+            345
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "non-exist-language"
+}
+[2025-03-28 16:01:43.127] [error] Language [ non-exist-language ] not inited.
+[2025-03-28 16:01:43.129] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.129] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.129] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1318,
+            345
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": [
+        "en-us",
+        "ko-kr"
+    ]
+}
+[2025-03-28 16:01:43.129] [error] Value type of 'language' must be string.
+[2025-03-28 16:01:43.130] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.130] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.130] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1318,
+            345
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": true
+}
+[2025-03-28 16:01:43.130] [error] Value type of 'language' must be string.
+[2025-03-28 16:01:43.131] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.131] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.131] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1318,
+            345
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": 114514
+}
+[2025-03-28 16:01:43.131] [error] Value type of 'language' must be string.
+[2025-03-28 16:01:43.132] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.132] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.132] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1318,
+            345
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": {
+        "language": "en-us"
+    }
+}
+[2025-03-28 16:01:43.132] [error] Value type of 'language' must be string.
+[2025-03-28 16:01:43.133] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.133] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.133] [info] 
+{
+    "candidates": "",
+    "image": {
+        "local_path": "non-exist-path",
+        "pass_method": 2
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:43.133] [info] Pass method : local file
+[2025-03-28 16:01:43.133] [error] Image file not found : non-exist-path
+[2025-03-28 16:01:43.133] [error] Failed to get image.
+[2025-03-28 16:01:43.135] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.135] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.135] [info] 
+{
+    "candidates": "",
+    "image": {
+        "local_path": [
+            "non-exist-path"
+        ],
+        "pass_method": 2
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:43.135] [info] Pass method : local file
+[2025-03-28 16:01:43.135] [error] '/image_info/local_path' must be string.
+[2025-03-28 16:01:43.135] [error] Failed to get image.
+[2025-03-28 16:01:43.136] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.136] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.136] [info] 
+{
+    "candidates": "",
+    "image": {
+        "local_path": {
+            "path": "non-exist-path"
+        },
+        "pass_method": 2
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:43.136] [info] Pass method : local file
+[2025-03-28 16:01:43.136] [error] '/image_info/local_path' must be string.
+[2025-03-28 16:01:43.136] [error] Failed to get image.
+[2025-03-28 16:01:43.137] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.137] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.137] [info] 
+{
+    "candidates": "",
+    "image": {
+        "local_path": 114514,
+        "pass_method": 2
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:43.137] [info] Pass method : local file
+[2025-03-28 16:01:43.137] [error] '/image_info/local_path' must be string.
+[2025-03-28 16:01:43.137] [error] Failed to get image.
+[2025-03-28 16:01:43.138] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.138] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.138] [info] 
+{
+    "candidates": "",
+    "image": {
+        "local_path": true,
+        "pass_method": 2
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:43.138] [info] Pass method : local file
+[2025-03-28 16:01:43.138] [error] '/image_info/local_path' must be string.
+[2025-03-28 16:01:43.138] [error] Failed to get image.
+[2025-03-28 16:01:43.139] [info] <<< Ocr Release Shared Memory >>>
+[2025-03-28 16:01:43.139] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.139] [info] 
+{
+    "shared_memory_name": "/test"
+}
+[2025-03-28 16:01:43.140] [info] Input : exit
+[2025-03-28 16:01:43.140] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:43.140] [info] |                               Shutdown Server.                               |
+[2025-03-28 16:01:43.140] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:43.140] [info] <<< OCR Lite Release All >>>
+[2025-03-28 16:01:43.140] [info] <<< Det Release All >>>
+[2025-03-28 16:01:43.142] [info] Det Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.145] [info] Det Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:01:43.145] [info] DbNet map size : 0
+[2025-03-28 16:01:43.145] [info] <<< Cls Release All >>>
+[2025-03-28 16:01:43.146] [info] Cls Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.146] [info] Angle map size : 0
+[2025-03-28 16:01:43.146] [info] <<< Rec Release All >>>
+[2025-03-28 16:01:43.149] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv3_rec_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese.txt
+[2025-03-28 16:01:43.153] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_ch_PP-OCRv4_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese.txt
+[2025-03-28 16:01:43.156] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_chinese_cht_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese_cht.txt
+[2025-03-28 16:01:43.158] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_cyrillic_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_cyrillic.txt
+[2025-03-28 16:01:43.161] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_en_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_en.txt
+[2025-03-28 16:01:43.163] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_japan_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_japan.txt
+[2025-03-28 16:01:43.165] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_korean_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_korean.txt
+[2025-03-28 16:01:43.165] [info] CrnnNet map size : 0
+[2025-03-28 16:01:43.166] [info] <<< Logger Shutdown >>>

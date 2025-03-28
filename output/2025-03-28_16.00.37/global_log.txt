@@ -1,0 +1,1962 @@
+[2025-03-28 16:00:37.327] [info] BAAS     VERSION : 1.0.0
+[2025-03-28 16:00:37.327] [info] BAAS OCR VERSION : 1.1.1
+[2025-03-28 16:00:37.327] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin
+[2025-03-28 16:00:37.328] [info] <<< Config Load >>>
+[2025-03-28 16:00:37.328] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/static.json
+[2025-03-28 16:00:37.328] [info] <<< OCR Valid Languages >>>
+[2025-03-28 16:00:37.328] [info] en-us
+[2025-03-28 16:00:37.328] [info] ja-jp
+[2025-03-28 16:00:37.328] [info] ko-kr
+[2025-03-28 16:00:37.328] [info] ru-ru
+[2025-03-28 16:00:37.328] [info] zh-cn
+[2025-03-28 16:00:37.328] [info] zh-cn_v3
+[2025-03-28 16:00:37.328] [info] zh-tw
+[2025-03-28 16:00:37.328] [info] <<< Config Load >>>
+[2025-03-28 16:00:37.328] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/global_setting.json
+[2025-03-28 16:00:37.328] [info] <<< Config Dir >>>
+[2025-03-28 16:00:37.328] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/config
+[2025-03-28 16:00:37.328] [info] <<< Config Load >>>
+[2025-03-28 16:00:37.328] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/config/global_setting.json
+[2025-03-28 16:00:37.328] [info] Global config update
+[2025-03-28 16:00:37.328] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:00:37.328] [info] |                            BAAS Ocr Server Init.                             |
+[2025-03-28 16:00:37.328] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:00:37.328] [info] Server serial : localhost:1145
+[2025-03-28 16:00:37.328] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:00:37.328] [info] |                               Server started.                                |
+[2025-03-28 16:00:37.328] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:00:37.427] [info] Enable thread pool
+[2025-03-28 16:00:37.427] [info] <<< Request Body >>>
+[2025-03-28 16:00:37.427] [info] 
+{
+    "thread_count": 4
+}
+[2025-03-28 16:00:37.427] [info] <<< thread_count : 4 >>>
+[2025-03-28 16:00:37.428] [info] <<< Init Model >>>
+[2025-03-28 16:00:37.428] [info] <<< Request Body >>>
+[2025-03-28 16:00:37.428] [info] 
+{
+    "EnableCpuMemoryArena": true,
+    "gpu_id": -1,
+    "language": [
+        "ja-jp",
+        "ru-ru",
+        "en-us",
+        "zh-cn",
+        "zh-tw",
+        "zh-cn_v3",
+        "ko-kr"
+    ],
+    "num_thread": 4
+}
+[2025-03-28 16:00:37.428] [info] <<< OCR Init >>>
+[2025-03-28 16:00:37.428] [info] language: ja-jp
+[2025-03-28 16:00:37.428] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.428] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.428] [info] Rec     : rec_japan_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.428] [info] Key     : dict_japan.txt
+[2025-03-28 16:00:37.428] [info] GPU ID      : -1
+[2025-03-28 16:00:37.428] [info] Num Thread  : 4
+[2025-03-28 16:00:37.428] [info] Memory Pool : 1
+[2025-03-28 16:00:37.442] [info] Det use CPU
+[2025-03-28 16:00:37.442] [info] Cls use CPU.
+[2025-03-28 16:00:37.442] [info] Rec use CPU.
+[2025-03-28 16:00:37.442] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.442] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] CrnnNet  : rec_japan_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] <<< OCR Init >>>
+[2025-03-28 16:00:37.443] [info] language: ru-ru
+[2025-03-28 16:00:37.443] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Rec     : rec_cyrillic_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Key     : dict_cyrillic.txt
+[2025-03-28 16:00:37.443] [info] GPU ID      : -1
+[2025-03-28 16:00:37.443] [info] Num Thread  : 4
+[2025-03-28 16:00:37.443] [info] Memory Pool : 1
+[2025-03-28 16:00:37.443] [info] Det Already Inited
+[2025-03-28 16:00:37.443] [info] Cls Already Inited
+[2025-03-28 16:00:37.443] [info] Rec use CPU.
+[2025-03-28 16:00:37.443] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 3
+[2025-03-28 16:00:37.443] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 3
+[2025-03-28 16:00:37.443] [info] CrnnNet  : rec_cyrillic_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] <<< OCR Init >>>
+[2025-03-28 16:00:37.443] [info] language: en-us
+[2025-03-28 16:00:37.443] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Rec     : rec_en_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Key     : dict_en.txt
+[2025-03-28 16:00:37.443] [info] GPU ID      : -1
+[2025-03-28 16:00:37.443] [info] Num Thread  : 4
+[2025-03-28 16:00:37.443] [info] Memory Pool : 1
+[2025-03-28 16:00:37.443] [info] Det Already Inited
+[2025-03-28 16:00:37.443] [info] Cls Already Inited
+[2025-03-28 16:00:37.443] [info] Rec use CPU.
+[2025-03-28 16:00:37.443] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 4
+[2025-03-28 16:00:37.443] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 4
+[2025-03-28 16:00:37.443] [info] CrnnNet  : rec_en_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] <<< OCR Init >>>
+[2025-03-28 16:00:37.443] [info] language: zh-cn
+[2025-03-28 16:00:37.443] [info] Det     : ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Rec     : rec_ch_PP-OCRv4_infer.onnx
+[2025-03-28 16:00:37.443] [info] Key     : dict_chinese.txt
+[2025-03-28 16:00:37.443] [info] GPU ID      : -1
+[2025-03-28 16:00:37.443] [info] Num Thread  : 4
+[2025-03-28 16:00:37.443] [info] Memory Pool : 1
+[2025-03-28 16:00:37.443] [info] Det use CPU
+[2025-03-28 16:00:37.443] [info] Cls Already Inited
+[2025-03-28 16:00:37.443] [info] Rec use CPU.
+[2025-03-28 16:00:37.443] [info] DBNet    : ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 5
+[2025-03-28 16:00:37.443] [info] CrnnNet  : rec_ch_PP-OCRv4_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] <<< OCR Init >>>
+[2025-03-28 16:00:37.443] [info] language: zh-tw
+[2025-03-28 16:00:37.443] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Rec     : rec_chinese_cht_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Key     : dict_chinese_cht.txt
+[2025-03-28 16:00:37.443] [info] GPU ID      : -1
+[2025-03-28 16:00:37.443] [info] Num Thread  : 4
+[2025-03-28 16:00:37.443] [info] Memory Pool : 1
+[2025-03-28 16:00:37.443] [info] Det Already Inited
+[2025-03-28 16:00:37.443] [info] Cls Already Inited
+[2025-03-28 16:00:37.443] [info] Rec use CPU.
+[2025-03-28 16:00:37.443] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 5
+[2025-03-28 16:00:37.443] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 6
+[2025-03-28 16:00:37.443] [info] CrnnNet  : rec_chinese_cht_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] <<< OCR Init >>>
+[2025-03-28 16:00:37.443] [info] language: zh-cn_v3
+[2025-03-28 16:00:37.443] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Rec     : ch_PP-OCRv3_rec_infer.onnx
+[2025-03-28 16:00:37.443] [info] Key     : dict_chinese.txt
+[2025-03-28 16:00:37.443] [info] GPU ID      : -1
+[2025-03-28 16:00:37.443] [info] Num Thread  : 4
+[2025-03-28 16:00:37.443] [info] Memory Pool : 1
+[2025-03-28 16:00:37.443] [info] Det Already Inited
+[2025-03-28 16:00:37.443] [info] Cls Already Inited
+[2025-03-28 16:00:37.443] [info] Rec use CPU.
+[2025-03-28 16:00:37.443] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 6
+[2025-03-28 16:00:37.443] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 7
+[2025-03-28 16:00:37.443] [info] CrnnNet  : ch_PP-OCRv3_rec_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:37.443] [info] <<< OCR Init >>>
+[2025-03-28 16:00:37.443] [info] language: ko-kr
+[2025-03-28 16:00:37.443] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Rec     : rec_korean_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Key     : dict_korean.txt
+[2025-03-28 16:00:37.443] [info] GPU ID      : -1
+[2025-03-28 16:00:37.443] [info] Num Thread  : 4
+[2025-03-28 16:00:37.443] [info] Memory Pool : 1
+[2025-03-28 16:00:37.443] [info] Det Already Inited
+[2025-03-28 16:00:37.443] [info] Cls Already Inited
+[2025-03-28 16:00:37.443] [info] Rec use CPU.
+[2025-03-28 16:00:37.443] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 7
+[2025-03-28 16:00:37.443] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 8
+[2025-03-28 16:00:37.443] [info] CrnnNet  : rec_korean_PP-OCRv3_infer.onnx
+[2025-03-28 16:00:37.443] [info] Use count: 2
+[2025-03-28 16:00:38.056] [info] <<< Ocr Create Shared Memory >>>
+[2025-03-28 16:00:38.056] [info] <<< Request Body >>>
+[2025-03-28 16:00:38.056] [info] 
+{
+    "shared_memory_name": "/test",
+    "size": 2764800
+}
+[2025-03-28 16:00:38.063] [info] <<< OCR >>>
+[2025-03-28 16:00:38.063] [info] <<< Request Body >>>
+[2025-03-28 16:00:38.063] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1318,
+            345
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:00:38.063] [info] Pass method : shared_memory
+[2025-03-28 16:00:38.063] [info] Decode image time : 0ms
+[2025-03-28 16:00:39.102] [info] OCR time : 1039ms
+[2025-03-28 16:00:39.102] [info] ret_options : 7
+[2025-03-28 16:00:39.108] [info] <<< OCR >>>
+[2025-03-28 16:00:39.108] [info] <<< Request Body >>>
+[2025-03-28 16:00:39.108] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1327,
+            277
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:00:39.108] [info] Pass method : shared_memory
+[2025-03-28 16:00:39.108] [info] Decode image time : 0ms
+[2025-03-28 16:00:40.063] [info] OCR time : 955ms
+[2025-03-28 16:00:40.063] [info] ret_options : 7
+[2025-03-28 16:00:40.073] [info] <<< OCR >>>
+[2025-03-28 16:00:40.073] [info] <<< Request Body >>>
+[2025-03-28 16:00:40.073] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            780,
+            971
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:00:40.073] [info] Pass method : shared_memory
+[2025-03-28 16:00:40.073] [info] Decode image time : 0ms
+[2025-03-28 16:00:40.975] [info] OCR time : 902ms
+[2025-03-28 16:00:40.975] [info] ret_options : 7
+[2025-03-28 16:00:40.983] [info] <<< OCR >>>
+[2025-03-28 16:00:40.983] [info] <<< Request Body >>>
+[2025-03-28 16:00:40.983] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1060,
+            660
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:00:40.983] [info] Pass method : shared_memory
+[2025-03-28 16:00:40.983] [info] Decode image time : 0ms
+[2025-03-28 16:00:42.297] [info] OCR time : 1313ms
+[2025-03-28 16:00:42.297] [info] ret_options : 7
+[2025-03-28 16:00:42.313] [info] <<< OCR >>>
+[2025-03-28 16:00:42.313] [info] <<< Request Body >>>
+[2025-03-28 16:00:42.313] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:00:42.313] [info] Pass method : shared_memory
+[2025-03-28 16:00:42.313] [info] Decode image time : 0ms
+[2025-03-28 16:00:43.081] [info] OCR time : 768ms
+[2025-03-28 16:00:43.081] [info] ret_options : 7
+[2025-03-28 16:00:43.104] [info] <<< OCR >>>
+[2025-03-28 16:00:43.104] [info] <<< Request Body >>>
+[2025-03-28 16:00:43.104] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:00:43.104] [info] Pass method : shared_memory
+[2025-03-28 16:00:43.104] [info] Decode image time : 0ms
+[2025-03-28 16:00:43.539] [info] OCR time : 435ms
+[2025-03-28 16:00:43.539] [info] ret_options : 7
+[2025-03-28 16:00:43.552] [info] <<< OCR >>>
+[2025-03-28 16:00:43.552] [info] <<< Request Body >>>
+[2025-03-28 16:00:43.552] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:00:43.552] [info] Pass method : shared_memory
+[2025-03-28 16:00:43.552] [info] Decode image time : 0ms
+[2025-03-28 16:00:44.054] [info] OCR time : 502ms
+[2025-03-28 16:00:44.054] [info] ret_options : 7
+[2025-03-28 16:00:44.064] [info] <<< OCR >>>
+[2025-03-28 16:00:44.064] [info] <<< Request Body >>>
+[2025-03-28 16:00:44.064] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1042,
+            631
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:44.064] [info] Pass method : shared_memory
+[2025-03-28 16:00:44.064] [info] Decode image time : 0ms
+[2025-03-28 16:00:45.156] [info] OCR time : 1092ms
+[2025-03-28 16:00:45.156] [info] ret_options : 7
+[2025-03-28 16:00:45.163] [info] <<< OCR >>>
+[2025-03-28 16:00:45.163] [info] <<< Request Body >>>
+[2025-03-28 16:00:45.163] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            698,
+            719
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:45.163] [info] Pass method : shared_memory
+[2025-03-28 16:00:45.163] [info] Decode image time : 0ms
+[2025-03-28 16:00:45.949] [info] OCR time : 786ms
+[2025-03-28 16:00:45.949] [info] ret_options : 7
+[2025-03-28 16:00:45.954] [info] <<< OCR >>>
+[2025-03-28 16:00:45.954] [info] <<< Request Body >>>
+[2025-03-28 16:00:45.954] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            157,
+            425
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:45.954] [info] Pass method : shared_memory
+[2025-03-28 16:00:45.954] [info] Decode image time : 0ms
+[2025-03-28 16:00:46.107] [info] OCR time : 153ms
+[2025-03-28 16:00:46.107] [info] ret_options : 7
+[2025-03-28 16:00:46.111] [info] <<< OCR >>>
+[2025-03-28 16:00:46.111] [info] <<< Request Body >>>
+[2025-03-28 16:00:46.111] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            188,
+            376
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:46.111] [info] Pass method : shared_memory
+[2025-03-28 16:00:46.111] [info] Decode image time : 0ms
+[2025-03-28 16:00:46.233] [info] OCR time : 122ms
+[2025-03-28 16:00:46.233] [info] ret_options : 7
+[2025-03-28 16:00:46.237] [info] <<< OCR >>>
+[2025-03-28 16:00:46.237] [info] <<< Request Body >>>
+[2025-03-28 16:00:46.237] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            159,
+            446
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:46.237] [info] Pass method : shared_memory
+[2025-03-28 16:00:46.237] [info] Decode image time : 0ms
+[2025-03-28 16:00:46.421] [info] OCR time : 184ms
+[2025-03-28 16:00:46.421] [info] ret_options : 7
+[2025-03-28 16:00:46.437] [info] <<< OCR >>>
+[2025-03-28 16:00:46.437] [info] <<< Request Body >>>
+[2025-03-28 16:00:46.437] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:46.437] [info] Pass method : shared_memory
+[2025-03-28 16:00:46.437] [info] Decode image time : 0ms
+[2025-03-28 16:00:47.100] [info] OCR time : 663ms
+[2025-03-28 16:00:47.100] [info] ret_options : 7
+[2025-03-28 16:00:47.123] [info] <<< OCR >>>
+[2025-03-28 16:00:47.123] [info] <<< Request Body >>>
+[2025-03-28 16:00:47.123] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:47.123] [info] Pass method : shared_memory
+[2025-03-28 16:00:47.123] [info] Decode image time : 0ms
+[2025-03-28 16:00:47.522] [info] OCR time : 399ms
+[2025-03-28 16:00:47.522] [info] ret_options : 7
+[2025-03-28 16:00:47.535] [info] <<< OCR >>>
+[2025-03-28 16:00:47.535] [info] <<< Request Body >>>
+[2025-03-28 16:00:47.535] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:47.535] [info] Pass method : shared_memory
+[2025-03-28 16:00:47.535] [info] Decode image time : 0ms
+[2025-03-28 16:00:48.071] [info] OCR time : 536ms
+[2025-03-28 16:00:48.071] [info] ret_options : 7
+[2025-03-28 16:00:48.077] [info] <<< OCR >>>
+[2025-03-28 16:00:48.077] [info] <<< Request Body >>>
+[2025-03-28 16:00:48.077] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            350,
+            319
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:00:48.077] [info] Pass method : shared_memory
+[2025-03-28 16:00:48.077] [info] Decode image time : 0ms
+[2025-03-28 16:00:48.360] [info] OCR time : 283ms
+[2025-03-28 16:00:48.360] [info] ret_options : 7
+[2025-03-28 16:00:48.366] [info] <<< OCR >>>
+[2025-03-28 16:00:48.366] [info] <<< Request Body >>>
+[2025-03-28 16:00:48.366] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            483,
+            367
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:48.366] [info] Pass method : shared_memory
+[2025-03-28 16:00:48.366] [info] Decode image time : 0ms
+[2025-03-28 16:00:48.549] [info] OCR time : 183ms
+[2025-03-28 16:00:48.549] [info] ret_options : 7
+[2025-03-28 16:00:48.552] [info] <<< OCR >>>
+[2025-03-28 16:00:48.552] [info] <<< Request Body >>>
+[2025-03-28 16:00:48.552] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            134,
+            428
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:48.552] [info] Pass method : shared_memory
+[2025-03-28 16:00:48.552] [info] Decode image time : 0ms
+[2025-03-28 16:00:48.720] [info] OCR time : 168ms
+[2025-03-28 16:00:48.720] [info] ret_options : 7
+[2025-03-28 16:00:48.726] [info] <<< OCR >>>
+[2025-03-28 16:00:48.726] [info] <<< Request Body >>>
+[2025-03-28 16:00:48.726] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            154,
+            398
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:48.726] [info] Pass method : shared_memory
+[2025-03-28 16:00:48.726] [info] Decode image time : 0ms
+[2025-03-28 16:00:48.910] [info] OCR time : 184ms
+[2025-03-28 16:00:48.910] [info] ret_options : 7
+[2025-03-28 16:00:48.913] [info] <<< OCR >>>
+[2025-03-28 16:00:48.913] [info] <<< Request Body >>>
+[2025-03-28 16:00:48.913] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            209,
+            392
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:48.913] [info] Pass method : shared_memory
+[2025-03-28 16:00:48.913] [info] Decode image time : 0ms
+[2025-03-28 16:00:49.107] [info] OCR time : 194ms
+[2025-03-28 16:00:49.107] [info] ret_options : 7
+[2025-03-28 16:00:49.110] [info] <<< OCR >>>
+[2025-03-28 16:00:49.110] [info] <<< Request Body >>>
+[2025-03-28 16:00:49.110] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            184,
+            373
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:49.110] [info] Pass method : shared_memory
+[2025-03-28 16:00:49.110] [info] Decode image time : 0ms
+[2025-03-28 16:00:49.289] [info] OCR time : 179ms
+[2025-03-28 16:00:49.289] [info] ret_options : 7
+[2025-03-28 16:00:49.312] [info] <<< OCR >>>
+[2025-03-28 16:00:49.312] [info] <<< Request Body >>>
+[2025-03-28 16:00:49.312] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:49.312] [info] Pass method : shared_memory
+[2025-03-28 16:00:49.312] [info] Decode image time : 0ms
+[2025-03-28 16:00:49.791] [info] OCR time : 479ms
+[2025-03-28 16:00:49.791] [info] ret_options : 7
+[2025-03-28 16:00:49.805] [info] <<< OCR >>>
+[2025-03-28 16:00:49.805] [info] <<< Request Body >>>
+[2025-03-28 16:00:49.805] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:49.805] [info] Pass method : shared_memory
+[2025-03-28 16:00:49.805] [info] Decode image time : 0ms
+[2025-03-28 16:00:50.346] [info] OCR time : 541ms
+[2025-03-28 16:00:50.346] [info] ret_options : 7
+[2025-03-28 16:00:50.357] [info] <<< OCR >>>
+[2025-03-28 16:00:50.357] [info] <<< Request Body >>>
+[2025-03-28 16:00:50.357] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:50.357] [info] Pass method : shared_memory
+[2025-03-28 16:00:50.357] [info] Decode image time : 0ms
+[2025-03-28 16:00:50.872] [info] OCR time : 515ms
+[2025-03-28 16:00:50.872] [info] ret_options : 7
+[2025-03-28 16:00:50.885] [info] <<< OCR >>>
+[2025-03-28 16:00:50.885] [info] <<< Request Body >>>
+[2025-03-28 16:00:50.885] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:50.885] [info] Pass method : shared_memory
+[2025-03-28 16:00:50.885] [info] Decode image time : 0ms
+[2025-03-28 16:00:51.266] [info] OCR time : 381ms
+[2025-03-28 16:00:51.266] [info] ret_options : 7
+[2025-03-28 16:00:51.284] [info] <<< OCR >>>
+[2025-03-28 16:00:51.284] [info] <<< Request Body >>>
+[2025-03-28 16:00:51.284] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:51.284] [info] Pass method : shared_memory
+[2025-03-28 16:00:51.284] [info] Decode image time : 0ms
+[2025-03-28 16:00:51.884] [info] OCR time : 600ms
+[2025-03-28 16:00:51.884] [info] ret_options : 7
+[2025-03-28 16:00:51.898] [info] <<< OCR >>>
+[2025-03-28 16:00:51.898] [info] <<< Request Body >>>
+[2025-03-28 16:00:51.898] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:51.898] [info] Pass method : shared_memory
+[2025-03-28 16:00:51.898] [info] Decode image time : 0ms
+[2025-03-28 16:00:52.652] [info] OCR time : 754ms
+[2025-03-28 16:00:52.652] [info] ret_options : 7
+[2025-03-28 16:00:52.666] [info] <<< OCR >>>
+[2025-03-28 16:00:52.666] [info] <<< Request Body >>>
+[2025-03-28 16:00:52.666] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:52.666] [info] Pass method : shared_memory
+[2025-03-28 16:00:52.666] [info] Decode image time : 0ms
+[2025-03-28 16:00:53.336] [info] OCR time : 670ms
+[2025-03-28 16:00:53.336] [info] ret_options : 7
+[2025-03-28 16:00:53.350] [info] <<< OCR >>>
+[2025-03-28 16:00:53.350] [info] <<< Request Body >>>
+[2025-03-28 16:00:53.350] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:00:53.350] [info] Pass method : shared_memory
+[2025-03-28 16:00:53.350] [info] Decode image time : 0ms
+[2025-03-28 16:00:53.968] [info] OCR time : 618ms
+[2025-03-28 16:00:53.968] [info] ret_options : 7
+[2025-03-28 16:00:53.975] [info] <<< OCR >>>
+[2025-03-28 16:00:53.975] [info] <<< Request Body >>>
+[2025-03-28 16:00:53.975] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            584,
+            942
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:00:53.975] [info] Pass method : shared_memory
+[2025-03-28 16:00:53.975] [info] Decode image time : 0ms
+[2025-03-28 16:00:54.755] [info] OCR time : 780ms
+[2025-03-28 16:00:54.755] [info] ret_options : 7
+[2025-03-28 16:00:54.764] [info] <<< OCR >>>
+[2025-03-28 16:00:54.764] [info] <<< Request Body >>>
+[2025-03-28 16:00:54.764] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1214,
+            433
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:00:54.764] [info] Pass method : shared_memory
+[2025-03-28 16:00:54.764] [info] Decode image time : 0ms
+[2025-03-28 16:00:55.327] [info] OCR time : 563ms
+[2025-03-28 16:00:55.327] [info] ret_options : 7
+[2025-03-28 16:00:55.336] [info] <<< OCR >>>
+[2025-03-28 16:00:55.336] [info] <<< Request Body >>>
+[2025-03-28 16:00:55.336] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            704,
+            798
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:00:55.336] [info] Pass method : shared_memory
+[2025-03-28 16:00:55.336] [info] Decode image time : 0ms
+[2025-03-28 16:00:56.455] [info] OCR time : 1119ms
+[2025-03-28 16:00:56.455] [info] ret_options : 7
+[2025-03-28 16:00:56.464] [info] <<< OCR >>>
+[2025-03-28 16:00:56.464] [info] <<< Request Body >>>
+[2025-03-28 16:00:56.464] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            667,
+            891
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:00:56.464] [info] Pass method : shared_memory
+[2025-03-28 16:00:56.464] [info] Decode image time : 0ms
+[2025-03-28 16:00:57.627] [info] OCR time : 1163ms
+[2025-03-28 16:00:57.627] [info] ret_options : 7
+[2025-03-28 16:00:57.638] [info] <<< OCR >>>
+[2025-03-28 16:00:57.638] [info] <<< Request Body >>>
+[2025-03-28 16:00:57.638] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            696,
+            1179
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:00:57.638] [info] Pass method : shared_memory
+[2025-03-28 16:00:57.638] [info] Decode image time : 0ms
+[2025-03-28 16:00:59.088] [info] OCR time : 1450ms
+[2025-03-28 16:00:59.088] [info] ret_options : 7
+[2025-03-28 16:00:59.098] [info] <<< OCR >>>
+[2025-03-28 16:00:59.098] [info] <<< Request Body >>>
+[2025-03-28 16:00:59.098] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            716,
+            844
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:00:59.098] [info] Pass method : shared_memory
+[2025-03-28 16:00:59.098] [info] Decode image time : 0ms
+[2025-03-28 16:01:00.776] [info] OCR time : 1678ms
+[2025-03-28 16:01:00.776] [info] ret_options : 7
+[2025-03-28 16:01:00.788] [info] <<< OCR >>>
+[2025-03-28 16:01:00.788] [info] <<< Request Body >>>
+[2025-03-28 16:01:00.788] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            850,
+            478
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:00.788] [info] Pass method : shared_memory
+[2025-03-28 16:01:00.788] [info] Decode image time : 0ms
+[2025-03-28 16:01:01.731] [info] OCR time : 943ms
+[2025-03-28 16:01:01.731] [info] ret_options : 7
+[2025-03-28 16:01:01.741] [info] <<< OCR >>>
+[2025-03-28 16:01:01.741] [info] <<< Request Body >>>
+[2025-03-28 16:01:01.741] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            850,
+            478
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:01.741] [info] Pass method : shared_memory
+[2025-03-28 16:01:01.741] [info] Decode image time : 0ms
+[2025-03-28 16:01:02.310] [info] OCR time : 569ms
+[2025-03-28 16:01:02.310] [info] ret_options : 7
+[2025-03-28 16:01:02.329] [info] <<< OCR >>>
+[2025-03-28 16:01:02.329] [info] <<< Request Body >>>
+[2025-03-28 16:01:02.329] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            850,
+            478
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:02.329] [info] Pass method : shared_memory
+[2025-03-28 16:01:02.329] [info] Decode image time : 0ms
+[2025-03-28 16:01:02.677] [info] OCR time : 348ms
+[2025-03-28 16:01:02.677] [info] ret_options : 7
+[2025-03-28 16:01:02.689] [info] <<< OCR >>>
+[2025-03-28 16:01:02.689] [info] <<< Request Body >>>
+[2025-03-28 16:01:02.689] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:02.689] [info] Pass method : shared_memory
+[2025-03-28 16:01:02.689] [info] Decode image time : 0ms
+[2025-03-28 16:01:03.101] [info] OCR time : 412ms
+[2025-03-28 16:01:03.101] [info] ret_options : 7
+[2025-03-28 16:01:03.114] [info] <<< OCR >>>
+[2025-03-28 16:01:03.114] [info] <<< Request Body >>>
+[2025-03-28 16:01:03.114] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:03.114] [info] Pass method : shared_memory
+[2025-03-28 16:01:03.114] [info] Decode image time : 0ms
+[2025-03-28 16:01:03.533] [info] OCR time : 419ms
+[2025-03-28 16:01:03.533] [info] ret_options : 7
+[2025-03-28 16:01:03.554] [info] <<< OCR >>>
+[2025-03-28 16:01:03.554] [info] <<< Request Body >>>
+[2025-03-28 16:01:03.554] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1280,
+            720
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:03.554] [info] Pass method : shared_memory
+[2025-03-28 16:01:03.554] [info] Decode image time : 0ms
+[2025-03-28 16:01:03.968] [info] OCR time : 414ms
+[2025-03-28 16:01:03.968] [info] ret_options : 7
+[2025-03-28 16:01:03.972] [info] <<< OCR >>>
+[2025-03-28 16:01:03.972] [info] <<< Request Body >>>
+[2025-03-28 16:01:03.972] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            245,
+            457
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:03.972] [info] Pass method : shared_memory
+[2025-03-28 16:01:03.972] [info] Decode image time : 0ms
+[2025-03-28 16:01:04.157] [info] OCR time : 185ms
+[2025-03-28 16:01:04.157] [info] ret_options : 7
+[2025-03-28 16:01:04.161] [info] <<< OCR >>>
+[2025-03-28 16:01:04.161] [info] <<< Request Body >>>
+[2025-03-28 16:01:04.161] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            225,
+            424
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:04.161] [info] Pass method : shared_memory
+[2025-03-28 16:01:04.161] [info] Decode image time : 0ms
+[2025-03-28 16:01:04.338] [info] OCR time : 177ms
+[2025-03-28 16:01:04.338] [info] ret_options : 7
+[2025-03-28 16:01:04.341] [info] <<< OCR >>>
+[2025-03-28 16:01:04.341] [info] <<< Request Body >>>
+[2025-03-28 16:01:04.341] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            219,
+            384
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:04.341] [info] Pass method : shared_memory
+[2025-03-28 16:01:04.341] [info] Decode image time : 0ms
+[2025-03-28 16:01:04.514] [info] OCR time : 173ms
+[2025-03-28 16:01:04.514] [info] ret_options : 7
+[2025-03-28 16:01:04.521] [info] <<< OCR >>>
+[2025-03-28 16:01:04.521] [info] <<< Request Body >>>
+[2025-03-28 16:01:04.521] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            843,
+            451
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:04.521] [info] Pass method : shared_memory
+[2025-03-28 16:01:04.521] [info] Decode image time : 0ms
+[2025-03-28 16:01:04.967] [info] OCR time : 446ms
+[2025-03-28 16:01:04.967] [info] ret_options : 7
+[2025-03-28 16:01:04.973] [info] <<< OCR >>>
+[2025-03-28 16:01:04.973] [info] <<< Request Body >>>
+[2025-03-28 16:01:04.973] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            693,
+            463
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:04.973] [info] Pass method : shared_memory
+[2025-03-28 16:01:04.973] [info] Decode image time : 0ms
+[2025-03-28 16:01:05.758] [info] OCR time : 785ms
+[2025-03-28 16:01:05.758] [info] ret_options : 7
+[2025-03-28 16:01:05.763] [info] <<< OCR >>>
+[2025-03-28 16:01:05.763] [info] <<< Request Body >>>
+[2025-03-28 16:01:05.763] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            579,
+            309
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:05.763] [info] Pass method : shared_memory
+[2025-03-28 16:01:05.763] [info] Decode image time : 0ms
+[2025-03-28 16:01:06.596] [info] OCR time : 833ms
+[2025-03-28 16:01:06.596] [info] ret_options : 7
+[2025-03-28 16:01:06.610] [info] <<< OCR >>>
+[2025-03-28 16:01:06.610] [info] <<< Request Body >>>
+[2025-03-28 16:01:06.610] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            1043,
+            712
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:06.610] [info] Pass method : shared_memory
+[2025-03-28 16:01:06.610] [info] Decode image time : 0ms
+[2025-03-28 16:01:07.538] [info] OCR time : 928ms
+[2025-03-28 16:01:07.538] [info] ret_options : 7
+[2025-03-28 16:01:07.547] [info] <<< OCR >>>
+[2025-03-28 16:01:07.547] [info] <<< Request Body >>>
+[2025-03-28 16:01:07.547] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            666,
+            777
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:07.547] [info] Pass method : shared_memory
+[2025-03-28 16:01:07.547] [info] Decode image time : 0ms
+[2025-03-28 16:01:08.854] [info] OCR time : 1307ms
+[2025-03-28 16:01:08.854] [info] ret_options : 7
+[2025-03-28 16:01:08.864] [info] <<< OCR >>>
+[2025-03-28 16:01:08.864] [info] <<< Request Body >>>
+[2025-03-28 16:01:08.864] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            578,
+            486
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:08.864] [info] Pass method : shared_memory
+[2025-03-28 16:01:08.864] [info] Decode image time : 0ms
+[2025-03-28 16:01:10.150] [info] OCR time : 1286ms
+[2025-03-28 16:01:10.150] [info] ret_options : 7
+[2025-03-28 16:01:10.155] [info] <<< Ocr Release Shared Memory >>>
+[2025-03-28 16:01:10.155] [info] <<< Request Body >>>
+[2025-03-28 16:01:10.155] [info] 
+{
+    "shared_memory_name": "/test"
+}
+[2025-03-28 16:01:10.170] [info] <<< OCR >>>
+[2025-03-28 16:01:10.170] [info] <<< Request Body >>>
+[2025-03-28 16:01:10.170] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:01:10.170] [info] Pass method : post file
+[2025-03-28 16:01:10.176] [info] Decode image time : 6ms
+[2025-03-28 16:01:11.129] [info] OCR time : 953ms
+[2025-03-28 16:01:11.129] [info] ret_options : 7
+[2025-03-28 16:01:11.143] [info] <<< OCR >>>
+[2025-03-28 16:01:11.143] [info] <<< Request Body >>>
+[2025-03-28 16:01:11.143] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:01:11.143] [info] Pass method : post file
+[2025-03-28 16:01:11.148] [info] Decode image time : 5ms
+[2025-03-28 16:01:12.074] [info] OCR time : 926ms
+[2025-03-28 16:01:12.074] [info] ret_options : 7
+[2025-03-28 16:01:12.095] [info] <<< OCR >>>
+[2025-03-28 16:01:12.095] [info] <<< Request Body >>>
+[2025-03-28 16:01:12.095] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:01:12.095] [info] Pass method : post file
+[2025-03-28 16:01:12.104] [info] Decode image time : 9ms
+[2025-03-28 16:01:12.990] [info] OCR time : 886ms
+[2025-03-28 16:01:12.990] [info] ret_options : 7
+[2025-03-28 16:01:13.009] [info] <<< OCR >>>
+[2025-03-28 16:01:13.009] [info] <<< Request Body >>>
+[2025-03-28 16:01:13.009] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:01:13.009] [info] Pass method : post file
+[2025-03-28 16:01:13.016] [info] Decode image time : 7ms
+[2025-03-28 16:01:14.285] [info] OCR time : 1269ms
+[2025-03-28 16:01:14.285] [info] ret_options : 7
+[2025-03-28 16:01:14.326] [info] <<< OCR >>>
+[2025-03-28 16:01:14.326] [info] <<< Request Body >>>
+[2025-03-28 16:01:14.326] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:01:14.326] [info] Pass method : post file
+[2025-03-28 16:01:14.337] [info] Decode image time : 11ms
+[2025-03-28 16:01:15.066] [info] OCR time : 729ms
+[2025-03-28 16:01:15.066] [info] ret_options : 7
+[2025-03-28 16:01:15.128] [info] <<< OCR >>>
+[2025-03-28 16:01:15.128] [info] <<< Request Body >>>
+[2025-03-28 16:01:15.128] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:01:15.128] [info] Pass method : post file
+[2025-03-28 16:01:15.143] [info] Decode image time : 15ms
+[2025-03-28 16:01:15.557] [info] OCR time : 414ms
+[2025-03-28 16:01:15.557] [info] ret_options : 7
+[2025-03-28 16:01:15.590] [info] <<< OCR >>>
+[2025-03-28 16:01:15.590] [info] <<< Request Body >>>
+[2025-03-28 16:01:15.590] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us",
+    "ret_options": 7
+}
+[2025-03-28 16:01:15.590] [info] Pass method : post file
+[2025-03-28 16:01:15.602] [info] Decode image time : 12ms
+[2025-03-28 16:01:16.087] [info] OCR time : 485ms
+[2025-03-28 16:01:16.087] [info] ret_options : 7
+[2025-03-28 16:01:16.105] [info] <<< OCR >>>
+[2025-03-28 16:01:16.105] [info] <<< Request Body >>>
+[2025-03-28 16:01:16.105] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:16.105] [info] Pass method : post file
+[2025-03-28 16:01:16.113] [info] Decode image time : 8ms
+[2025-03-28 16:01:17.169] [info] OCR time : 1056ms
+[2025-03-28 16:01:17.169] [info] ret_options : 7
+[2025-03-28 16:01:17.184] [info] <<< OCR >>>
+[2025-03-28 16:01:17.184] [info] <<< Request Body >>>
+[2025-03-28 16:01:17.184] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:17.184] [info] Pass method : post file
+[2025-03-28 16:01:17.190] [info] Decode image time : 6ms
+[2025-03-28 16:01:17.940] [info] OCR time : 750ms
+[2025-03-28 16:01:17.940] [info] ret_options : 7
+[2025-03-28 16:01:17.946] [info] <<< OCR >>>
+[2025-03-28 16:01:17.946] [info] <<< Request Body >>>
+[2025-03-28 16:01:17.946] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:17.946] [info] Pass method : post file
+[2025-03-28 16:01:17.947] [info] Decode image time : 1ms
+[2025-03-28 16:01:18.106] [info] OCR time : 159ms
+[2025-03-28 16:01:18.106] [info] ret_options : 7
+[2025-03-28 16:01:18.111] [info] <<< OCR >>>
+[2025-03-28 16:01:18.111] [info] <<< Request Body >>>
+[2025-03-28 16:01:18.111] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:18.111] [info] Pass method : post file
+[2025-03-28 16:01:18.112] [info] Decode image time : 1ms
+[2025-03-28 16:01:18.245] [info] OCR time : 133ms
+[2025-03-28 16:01:18.245] [info] ret_options : 7
+[2025-03-28 16:01:18.250] [info] <<< OCR >>>
+[2025-03-28 16:01:18.250] [info] <<< Request Body >>>
+[2025-03-28 16:01:18.250] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:18.250] [info] Pass method : post file
+[2025-03-28 16:01:18.251] [info] Decode image time : 1ms
+[2025-03-28 16:01:18.419] [info] OCR time : 168ms
+[2025-03-28 16:01:18.419] [info] ret_options : 7
+[2025-03-28 16:01:18.459] [info] <<< OCR >>>
+[2025-03-28 16:01:18.459] [info] <<< Request Body >>>
+[2025-03-28 16:01:18.459] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:18.459] [info] Pass method : post file
+[2025-03-28 16:01:18.470] [info] Decode image time : 11ms
+[2025-03-28 16:01:19.114] [info] OCR time : 644ms
+[2025-03-28 16:01:19.114] [info] ret_options : 7
+[2025-03-28 16:01:19.177] [info] <<< OCR >>>
+[2025-03-28 16:01:19.177] [info] <<< Request Body >>>
+[2025-03-28 16:01:19.177] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:19.177] [info] Pass method : post file
+[2025-03-28 16:01:19.192] [info] Decode image time : 15ms
+[2025-03-28 16:01:19.585] [info] OCR time : 393ms
+[2025-03-28 16:01:19.585] [info] ret_options : 7
+[2025-03-28 16:01:19.622] [info] <<< OCR >>>
+[2025-03-28 16:01:19.622] [info] <<< Request Body >>>
+[2025-03-28 16:01:19.622] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:19.622] [info] Pass method : post file
+[2025-03-28 16:01:19.633] [info] Decode image time : 11ms
+[2025-03-28 16:01:20.148] [info] OCR time : 515ms
+[2025-03-28 16:01:20.148] [info] ret_options : 7
+[2025-03-28 16:01:20.159] [info] <<< OCR >>>
+[2025-03-28 16:01:20.159] [info] <<< Request Body >>>
+[2025-03-28 16:01:20.159] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr",
+    "ret_options": 7
+}
+[2025-03-28 16:01:20.159] [info] Pass method : post file
+[2025-03-28 16:01:20.162] [info] Decode image time : 3ms
+[2025-03-28 16:01:20.449] [info] OCR time : 287ms
+[2025-03-28 16:01:20.449] [info] ret_options : 7
+[2025-03-28 16:01:20.457] [info] <<< OCR >>>
+[2025-03-28 16:01:20.457] [info] <<< Request Body >>>
+[2025-03-28 16:01:20.457] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:20.457] [info] Pass method : post file
+[2025-03-28 16:01:20.459] [info] Decode image time : 2ms
+[2025-03-28 16:01:20.743] [info] OCR time : 284ms
+[2025-03-28 16:01:20.743] [info] ret_options : 7
+[2025-03-28 16:01:20.748] [info] <<< OCR >>>
+[2025-03-28 16:01:20.748] [info] <<< Request Body >>>
+[2025-03-28 16:01:20.748] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:20.748] [info] Pass method : post file
+[2025-03-28 16:01:20.749] [info] Decode image time : 1ms
+[2025-03-28 16:01:20.909] [info] OCR time : 160ms
+[2025-03-28 16:01:20.909] [info] ret_options : 7
+[2025-03-28 16:01:20.914] [info] <<< OCR >>>
+[2025-03-28 16:01:20.914] [info] <<< Request Body >>>
+[2025-03-28 16:01:20.914] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:20.914] [info] Pass method : post file
+[2025-03-28 16:01:20.915] [info] Decode image time : 1ms
+[2025-03-28 16:01:21.078] [info] OCR time : 163ms
+[2025-03-28 16:01:21.078] [info] ret_options : 7
+[2025-03-28 16:01:21.083] [info] <<< OCR >>>
+[2025-03-28 16:01:21.083] [info] <<< Request Body >>>
+[2025-03-28 16:01:21.083] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:21.083] [info] Pass method : post file
+[2025-03-28 16:01:21.084] [info] Decode image time : 1ms
+[2025-03-28 16:01:21.254] [info] OCR time : 170ms
+[2025-03-28 16:01:21.254] [info] ret_options : 7
+[2025-03-28 16:01:21.259] [info] <<< OCR >>>
+[2025-03-28 16:01:21.259] [info] <<< Request Body >>>
+[2025-03-28 16:01:21.259] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:21.259] [info] Pass method : post file
+[2025-03-28 16:01:21.260] [info] Decode image time : 1ms
+[2025-03-28 16:01:21.439] [info] OCR time : 179ms
+[2025-03-28 16:01:21.439] [info] ret_options : 7
+[2025-03-28 16:01:21.501] [info] <<< OCR >>>
+[2025-03-28 16:01:21.501] [info] <<< Request Body >>>
+[2025-03-28 16:01:21.501] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:21.501] [info] Pass method : post file
+[2025-03-28 16:01:21.516] [info] Decode image time : 15ms
+[2025-03-28 16:01:21.978] [info] OCR time : 462ms
+[2025-03-28 16:01:21.978] [info] ret_options : 7
+[2025-03-28 16:01:22.019] [info] <<< OCR >>>
+[2025-03-28 16:01:22.019] [info] <<< Request Body >>>
+[2025-03-28 16:01:22.019] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:22.019] [info] Pass method : post file
+[2025-03-28 16:01:22.030] [info] Decode image time : 11ms
+[2025-03-28 16:01:22.536] [info] OCR time : 506ms
+[2025-03-28 16:01:22.536] [info] ret_options : 7
+[2025-03-28 16:01:22.565] [info] <<< OCR >>>
+[2025-03-28 16:01:22.565] [info] <<< Request Body >>>
+[2025-03-28 16:01:22.565] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:22.565] [info] Pass method : post file
+[2025-03-28 16:01:22.577] [info] Decode image time : 12ms
+[2025-03-28 16:01:23.063] [info] OCR time : 486ms
+[2025-03-28 16:01:23.063] [info] ret_options : 7
+[2025-03-28 16:01:23.103] [info] <<< OCR >>>
+[2025-03-28 16:01:23.103] [info] <<< Request Body >>>
+[2025-03-28 16:01:23.103] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:23.103] [info] Pass method : post file
+[2025-03-28 16:01:23.114] [info] Decode image time : 11ms
+[2025-03-28 16:01:23.481] [info] OCR time : 367ms
+[2025-03-28 16:01:23.481] [info] ret_options : 7
+[2025-03-28 16:01:23.536] [info] <<< OCR >>>
+[2025-03-28 16:01:23.536] [info] <<< Request Body >>>
+[2025-03-28 16:01:23.536] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:23.536] [info] Pass method : post file
+[2025-03-28 16:01:23.549] [info] Decode image time : 13ms
+[2025-03-28 16:01:24.134] [info] OCR time : 585ms
+[2025-03-28 16:01:24.134] [info] ret_options : 7
+[2025-03-28 16:01:24.174] [info] <<< OCR >>>
+[2025-03-28 16:01:24.174] [info] <<< Request Body >>>
+[2025-03-28 16:01:24.174] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:24.174] [info] Pass method : post file
+[2025-03-28 16:01:24.185] [info] Decode image time : 11ms
+[2025-03-28 16:01:24.884] [info] OCR time : 699ms
+[2025-03-28 16:01:24.884] [info] ret_options : 7
+[2025-03-28 16:01:24.926] [info] <<< OCR >>>
+[2025-03-28 16:01:24.926] [info] <<< Request Body >>>
+[2025-03-28 16:01:24.926] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:24.926] [info] Pass method : post file
+[2025-03-28 16:01:24.938] [info] Decode image time : 12ms
+[2025-03-28 16:01:25.586] [info] OCR time : 648ms
+[2025-03-28 16:01:25.586] [info] ret_options : 7
+[2025-03-28 16:01:25.624] [info] <<< OCR >>>
+[2025-03-28 16:01:25.624] [info] <<< Request Body >>>
+[2025-03-28 16:01:25.624] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp",
+    "ret_options": 7
+}
+[2025-03-28 16:01:25.624] [info] Pass method : post file
+[2025-03-28 16:01:25.635] [info] Decode image time : 11ms
+[2025-03-28 16:01:26.246] [info] OCR time : 611ms
+[2025-03-28 16:01:26.246] [info] ret_options : 7
+[2025-03-28 16:01:26.261] [info] <<< OCR >>>
+[2025-03-28 16:01:26.261] [info] <<< Request Body >>>
+[2025-03-28 16:01:26.261] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:01:26.261] [info] Pass method : post file
+[2025-03-28 16:01:26.267] [info] Decode image time : 6ms
+[2025-03-28 16:01:26.986] [info] OCR time : 719ms
+[2025-03-28 16:01:26.986] [info] ret_options : 7
+[2025-03-28 16:01:27.010] [info] <<< OCR >>>
+[2025-03-28 16:01:27.010] [info] <<< Request Body >>>
+[2025-03-28 16:01:27.010] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:01:27.010] [info] Pass method : post file
+[2025-03-28 16:01:27.018] [info] Decode image time : 8ms
+[2025-03-28 16:01:27.552] [info] OCR time : 534ms
+[2025-03-28 16:01:27.552] [info] ret_options : 7
+[2025-03-28 16:01:27.571] [info] <<< OCR >>>
+[2025-03-28 16:01:27.571] [info] <<< Request Body >>>
+[2025-03-28 16:01:27.571] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:01:27.571] [info] Pass method : post file
+[2025-03-28 16:01:27.577] [info] Decode image time : 6ms
+[2025-03-28 16:01:28.659] [info] OCR time : 1082ms
+[2025-03-28 16:01:28.659] [info] ret_options : 7
+[2025-03-28 16:01:28.677] [info] <<< OCR >>>
+[2025-03-28 16:01:28.677] [info] <<< Request Body >>>
+[2025-03-28 16:01:28.677] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:01:28.677] [info] Pass method : post file
+[2025-03-28 16:01:28.684] [info] Decode image time : 7ms
+[2025-03-28 16:01:29.827] [info] OCR time : 1143ms
+[2025-03-28 16:01:29.827] [info] ret_options : 7
+[2025-03-28 16:01:29.852] [info] <<< OCR >>>
+[2025-03-28 16:01:29.852] [info] <<< Request Body >>>
+[2025-03-28 16:01:29.852] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:01:29.852] [info] Pass method : post file
+[2025-03-28 16:01:29.862] [info] Decode image time : 10ms
+[2025-03-28 16:01:31.284] [info] OCR time : 1422ms
+[2025-03-28 16:01:31.284] [info] ret_options : 7
+[2025-03-28 16:01:31.306] [info] <<< OCR >>>
+[2025-03-28 16:01:31.306] [info] <<< Request Body >>>
+[2025-03-28 16:01:31.306] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn",
+    "ret_options": 7
+}
+[2025-03-28 16:01:31.306] [info] Pass method : post file
+[2025-03-28 16:01:31.313] [info] Decode image time : 7ms
+[2025-03-28 16:01:32.929] [info] OCR time : 1616ms
+[2025-03-28 16:01:32.929] [info] ret_options : 7
+[2025-03-28 16:01:32.959] [info] <<< OCR >>>
+[2025-03-28 16:01:32.959] [info] <<< Request Body >>>
+[2025-03-28 16:01:32.959] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:32.959] [info] Pass method : post file
+[2025-03-28 16:01:32.966] [info] Decode image time : 7ms
+[2025-03-28 16:01:33.880] [info] OCR time : 914ms
+[2025-03-28 16:01:33.880] [info] ret_options : 7
+[2025-03-28 16:01:33.902] [info] <<< OCR >>>
+[2025-03-28 16:01:33.902] [info] <<< Request Body >>>
+[2025-03-28 16:01:33.902] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:33.902] [info] Pass method : post file
+[2025-03-28 16:01:33.908] [info] Decode image time : 6ms
+[2025-03-28 16:01:34.423] [info] OCR time : 515ms
+[2025-03-28 16:01:34.423] [info] ret_options : 7
+[2025-03-28 16:01:34.460] [info] <<< OCR >>>
+[2025-03-28 16:01:34.460] [info] <<< Request Body >>>
+[2025-03-28 16:01:34.460] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:34.460] [info] Pass method : post file
+[2025-03-28 16:01:34.467] [info] Decode image time : 7ms
+[2025-03-28 16:01:34.790] [info] OCR time : 323ms
+[2025-03-28 16:01:34.790] [info] ret_options : 7
+[2025-03-28 16:01:34.834] [info] <<< OCR >>>
+[2025-03-28 16:01:34.834] [info] <<< Request Body >>>
+[2025-03-28 16:01:34.834] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:34.834] [info] Pass method : post file
+[2025-03-28 16:01:34.843] [info] Decode image time : 9ms
+[2025-03-28 16:01:35.236] [info] OCR time : 393ms
+[2025-03-28 16:01:35.236] [info] ret_options : 7
+[2025-03-28 16:01:35.273] [info] <<< OCR >>>
+[2025-03-28 16:01:35.273] [info] <<< Request Body >>>
+[2025-03-28 16:01:35.273] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3",
+    "ret_options": 7
+}
+[2025-03-28 16:01:35.273] [info] Pass method : post file
+[2025-03-28 16:01:35.285] [info] Decode image time : 12ms
+[2025-03-28 16:01:35.679] [info] OCR time : 394ms
+[2025-03-28 16:01:35.679] [info] ret_options : 7
+[2025-03-28 16:01:35.741] [info] <<< OCR >>>
+[2025-03-28 16:01:35.741] [info] <<< Request Body >>>
+[2025-03-28 16:01:35.741] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:35.741] [info] Pass method : post file
+[2025-03-28 16:01:35.756] [info] Decode image time : 15ms
+[2025-03-28 16:01:36.141] [info] OCR time : 385ms
+[2025-03-28 16:01:36.141] [info] ret_options : 7
+[2025-03-28 16:01:36.147] [info] <<< OCR >>>
+[2025-03-28 16:01:36.147] [info] <<< Request Body >>>
+[2025-03-28 16:01:36.147] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:36.147] [info] Pass method : post file
+[2025-03-28 16:01:36.149] [info] Decode image time : 2ms
+[2025-03-28 16:01:36.337] [info] OCR time : 188ms
+[2025-03-28 16:01:36.337] [info] ret_options : 7
+[2025-03-28 16:01:36.342] [info] <<< OCR >>>
+[2025-03-28 16:01:36.342] [info] <<< Request Body >>>
+[2025-03-28 16:01:36.342] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:36.342] [info] Pass method : post file
+[2025-03-28 16:01:36.343] [info] Decode image time : 1ms
+[2025-03-28 16:01:36.518] [info] OCR time : 175ms
+[2025-03-28 16:01:36.518] [info] ret_options : 7
+[2025-03-28 16:01:36.523] [info] <<< OCR >>>
+[2025-03-28 16:01:36.523] [info] <<< Request Body >>>
+[2025-03-28 16:01:36.523] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:36.523] [info] Pass method : post file
+[2025-03-28 16:01:36.524] [info] Decode image time : 1ms
+[2025-03-28 16:01:36.694] [info] OCR time : 170ms
+[2025-03-28 16:01:36.694] [info] ret_options : 7
+[2025-03-28 16:01:36.707] [info] <<< OCR >>>
+[2025-03-28 16:01:36.707] [info] <<< Request Body >>>
+[2025-03-28 16:01:36.707] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:36.707] [info] Pass method : post file
+[2025-03-28 16:01:36.712] [info] Decode image time : 5ms
+[2025-03-28 16:01:37.149] [info] OCR time : 437ms
+[2025-03-28 16:01:37.149] [info] ret_options : 7
+[2025-03-28 16:01:37.162] [info] <<< OCR >>>
+[2025-03-28 16:01:37.162] [info] <<< Request Body >>>
+[2025-03-28 16:01:37.162] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw",
+    "ret_options": 7
+}
+[2025-03-28 16:01:37.162] [info] Pass method : post file
+[2025-03-28 16:01:37.167] [info] Decode image time : 5ms
+[2025-03-28 16:01:37.940] [info] OCR time : 773ms
+[2025-03-28 16:01:37.940] [info] ret_options : 7
+[2025-03-28 16:01:37.953] [info] <<< OCR >>>
+[2025-03-28 16:01:37.953] [info] <<< Request Body >>>
+[2025-03-28 16:01:37.953] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:37.953] [info] Pass method : post file
+[2025-03-28 16:01:37.955] [info] Decode image time : 2ms
+[2025-03-28 16:01:38.769] [info] OCR time : 814ms
+[2025-03-28 16:01:38.769] [info] ret_options : 7
+[2025-03-28 16:01:38.791] [info] <<< OCR >>>
+[2025-03-28 16:01:38.791] [info] <<< Request Body >>>
+[2025-03-28 16:01:38.791] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:38.791] [info] Pass method : post file
+[2025-03-28 16:01:38.800] [info] Decode image time : 9ms
+[2025-03-28 16:01:39.712] [info] OCR time : 912ms
+[2025-03-28 16:01:39.712] [info] ret_options : 7
+[2025-03-28 16:01:39.730] [info] <<< OCR >>>
+[2025-03-28 16:01:39.730] [info] <<< Request Body >>>
+[2025-03-28 16:01:39.730] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:39.730] [info] Pass method : post file
+[2025-03-28 16:01:39.737] [info] Decode image time : 7ms
+[2025-03-28 16:01:41.026] [info] OCR time : 1289ms
+[2025-03-28 16:01:41.026] [info] ret_options : 7
+[2025-03-28 16:01:41.043] [info] <<< OCR >>>
+[2025-03-28 16:01:41.043] [info] <<< Request Body >>>
+[2025-03-28 16:01:41.043] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ru-ru",
+    "ret_options": 7
+}
+[2025-03-28 16:01:41.043] [info] Pass method : post file
+[2025-03-28 16:01:41.047] [info] Decode image time : 4ms
+[2025-03-28 16:01:42.303] [info] OCR time : 1256ms
+[2025-03-28 16:01:42.303] [info] ret_options : 7
+[2025-03-28 16:01:42.307] [info] Input : exit
+[2025-03-28 16:01:42.307] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:42.307] [info] |                               Shutdown Server.                               |
+[2025-03-28 16:01:42.307] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:42.308] [info] <<< OCR Lite Release All >>>
+[2025-03-28 16:01:42.308] [info] <<< Det Release All >>>
+[2025-03-28 16:01:42.312] [info] Det Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:42.317] [info] Det Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:01:42.317] [info] DbNet map size : 0
+[2025-03-28 16:01:42.317] [info] <<< Cls Release All >>>
+[2025-03-28 16:01:42.319] [info] Cls Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:42.319] [info] Angle map size : 0
+[2025-03-28 16:01:42.319] [info] <<< Rec Release All >>>
+[2025-03-28 16:01:42.323] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv3_rec_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese.txt
+[2025-03-28 16:01:42.328] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_ch_PP-OCRv4_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese.txt
+[2025-03-28 16:01:42.331] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_chinese_cht_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese_cht.txt
+[2025-03-28 16:01:42.333] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_cyrillic_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_cyrillic.txt
+[2025-03-28 16:01:42.335] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_en_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_en.txt
+[2025-03-28 16:01:42.338] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_japan_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_japan.txt
+[2025-03-28 16:01:42.340] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_korean_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_korean.txt
+[2025-03-28 16:01:42.340] [info] CrnnNet map size : 0
+[2025-03-28 16:01:42.344] [info] <<< Logger Shutdown >>>

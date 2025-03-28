@@ -1,0 +1,1332 @@
+[2025-03-28 16:01:43.210] [info] BAAS     VERSION : 1.0.0
+[2025-03-28 16:01:43.210] [info] BAAS OCR VERSION : 1.1.1
+[2025-03-28 16:01:43.210] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin
+[2025-03-28 16:01:43.210] [info] <<< Config Load >>>
+[2025-03-28 16:01:43.210] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/static.json
+[2025-03-28 16:01:43.210] [info] <<< OCR Valid Languages >>>
+[2025-03-28 16:01:43.210] [info] en-us
+[2025-03-28 16:01:43.210] [info] ja-jp
+[2025-03-28 16:01:43.210] [info] ko-kr
+[2025-03-28 16:01:43.210] [info] ru-ru
+[2025-03-28 16:01:43.210] [info] zh-cn
+[2025-03-28 16:01:43.210] [info] zh-cn_v3
+[2025-03-28 16:01:43.210] [info] zh-tw
+[2025-03-28 16:01:43.210] [info] <<< Config Load >>>
+[2025-03-28 16:01:43.210] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/global_setting.json
+[2025-03-28 16:01:43.210] [info] <<< Config Dir >>>
+[2025-03-28 16:01:43.210] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/config
+[2025-03-28 16:01:43.210] [info] <<< Config Load >>>
+[2025-03-28 16:01:43.210] [info] /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/config/global_setting.json
+[2025-03-28 16:01:43.210] [info] Global config update
+[2025-03-28 16:01:43.210] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:43.210] [info] |                            BAAS Ocr Server Init.                             |
+[2025-03-28 16:01:43.210] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:43.210] [info] Server serial : localhost:1145
+[2025-03-28 16:01:43.210] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:43.210] [info] |                               Server started.                                |
+[2025-03-28 16:01:43.210] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:43.309] [info] Enable thread pool
+[2025-03-28 16:01:43.309] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.309] [info] 
+{
+    "thread_count": 4
+}
+[2025-03-28 16:01:43.309] [info] <<< thread_count : 4 >>>
+[2025-03-28 16:01:43.310] [info] <<< Init Model >>>
+[2025-03-28 16:01:43.310] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.310] [info] 
+{
+    "EnableCpuMemoryArena": false,
+    "gpu_id": -1,
+    "language": [
+        "zh-tw",
+        "zh-cn_v3",
+        "ru-ru",
+        "ja-jp",
+        "zh-cn",
+        "en-us",
+        "ko-kr"
+    ],
+    "num_thread": 4
+}
+[2025-03-28 16:01:43.310] [info] <<< OCR Init >>>
+[2025-03-28 16:01:43.310] [info] language: zh-tw
+[2025-03-28 16:01:43.310] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.310] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.310] [info] Rec     : rec_chinese_cht_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.310] [info] Key     : dict_chinese_cht.txt
+[2025-03-28 16:01:43.310] [info] GPU ID      : -1
+[2025-03-28 16:01:43.310] [info] Num Thread  : 4
+[2025-03-28 16:01:43.310] [info] Memory Pool : 0
+[2025-03-28 16:01:43.324] [info] Det use CPU
+[2025-03-28 16:01:43.324] [info] Cls use CPU.
+[2025-03-28 16:01:43.324] [info] Rec use CPU.
+[2025-03-28 16:01:43.324] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] CrnnNet  : rec_chinese_cht_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] <<< OCR Init >>>
+[2025-03-28 16:01:43.324] [info] language: zh-cn_v3
+[2025-03-28 16:01:43.324] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Rec     : ch_PP-OCRv3_rec_infer.onnx
+[2025-03-28 16:01:43.324] [info] Key     : dict_chinese.txt
+[2025-03-28 16:01:43.324] [info] GPU ID      : -1
+[2025-03-28 16:01:43.324] [info] Num Thread  : 4
+[2025-03-28 16:01:43.324] [info] Memory Pool : 0
+[2025-03-28 16:01:43.324] [info] Det Already Inited
+[2025-03-28 16:01:43.324] [info] Cls Already Inited
+[2025-03-28 16:01:43.324] [info] Rec use CPU.
+[2025-03-28 16:01:43.324] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 3
+[2025-03-28 16:01:43.324] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 3
+[2025-03-28 16:01:43.324] [info] CrnnNet  : ch_PP-OCRv3_rec_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] <<< OCR Init >>>
+[2025-03-28 16:01:43.324] [info] language: ru-ru
+[2025-03-28 16:01:43.324] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Rec     : rec_cyrillic_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Key     : dict_cyrillic.txt
+[2025-03-28 16:01:43.324] [info] GPU ID      : -1
+[2025-03-28 16:01:43.324] [info] Num Thread  : 4
+[2025-03-28 16:01:43.324] [info] Memory Pool : 0
+[2025-03-28 16:01:43.324] [info] Det Already Inited
+[2025-03-28 16:01:43.324] [info] Cls Already Inited
+[2025-03-28 16:01:43.324] [info] Rec use CPU.
+[2025-03-28 16:01:43.324] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 4
+[2025-03-28 16:01:43.324] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 4
+[2025-03-28 16:01:43.324] [info] CrnnNet  : rec_cyrillic_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] <<< OCR Init >>>
+[2025-03-28 16:01:43.324] [info] language: ja-jp
+[2025-03-28 16:01:43.324] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Rec     : rec_japan_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Key     : dict_japan.txt
+[2025-03-28 16:01:43.324] [info] GPU ID      : -1
+[2025-03-28 16:01:43.324] [info] Num Thread  : 4
+[2025-03-28 16:01:43.324] [info] Memory Pool : 0
+[2025-03-28 16:01:43.324] [info] Det Already Inited
+[2025-03-28 16:01:43.324] [info] Cls Already Inited
+[2025-03-28 16:01:43.324] [info] Rec use CPU.
+[2025-03-28 16:01:43.324] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 5
+[2025-03-28 16:01:43.324] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 5
+[2025-03-28 16:01:43.324] [info] CrnnNet  : rec_japan_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] <<< OCR Init >>>
+[2025-03-28 16:01:43.324] [info] language: zh-cn
+[2025-03-28 16:01:43.324] [info] Det     : ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Rec     : rec_ch_PP-OCRv4_infer.onnx
+[2025-03-28 16:01:43.324] [info] Key     : dict_chinese.txt
+[2025-03-28 16:01:43.324] [info] GPU ID      : -1
+[2025-03-28 16:01:43.324] [info] Num Thread  : 4
+[2025-03-28 16:01:43.324] [info] Memory Pool : 0
+[2025-03-28 16:01:43.324] [info] Det use CPU
+[2025-03-28 16:01:43.324] [info] Cls Already Inited
+[2025-03-28 16:01:43.324] [info] Rec use CPU.
+[2025-03-28 16:01:43.324] [info] DBNet    : ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 6
+[2025-03-28 16:01:43.324] [info] CrnnNet  : rec_ch_PP-OCRv4_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] <<< OCR Init >>>
+[2025-03-28 16:01:43.324] [info] language: en-us
+[2025-03-28 16:01:43.324] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Rec     : rec_en_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Key     : dict_en.txt
+[2025-03-28 16:01:43.324] [info] GPU ID      : -1
+[2025-03-28 16:01:43.324] [info] Num Thread  : 4
+[2025-03-28 16:01:43.324] [info] Memory Pool : 0
+[2025-03-28 16:01:43.324] [info] Det Already Inited
+[2025-03-28 16:01:43.324] [info] Cls Already Inited
+[2025-03-28 16:01:43.324] [info] Rec use CPU.
+[2025-03-28 16:01:43.324] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 6
+[2025-03-28 16:01:43.324] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 7
+[2025-03-28 16:01:43.324] [info] CrnnNet  : rec_en_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.324] [info] <<< OCR Init >>>
+[2025-03-28 16:01:43.324] [info] language: ko-kr
+[2025-03-28 16:01:43.324] [info] Det     : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Cls     : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Rec     : rec_korean_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Key     : dict_korean.txt
+[2025-03-28 16:01:43.324] [info] GPU ID      : -1
+[2025-03-28 16:01:43.324] [info] Num Thread  : 4
+[2025-03-28 16:01:43.324] [info] Memory Pool : 0
+[2025-03-28 16:01:43.324] [info] Det Already Inited
+[2025-03-28 16:01:43.324] [info] Cls Already Inited
+[2025-03-28 16:01:43.324] [info] Rec use CPU.
+[2025-03-28 16:01:43.324] [info] DBNet    : ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 7
+[2025-03-28 16:01:43.324] [info] AngleNet : ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 8
+[2025-03-28 16:01:43.324] [info] CrnnNet  : rec_korean_PP-OCRv3_infer.onnx
+[2025-03-28 16:01:43.324] [info] Use count: 2
+[2025-03-28 16:01:43.930] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.930] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.930] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:43.930] [info] Pass method : post file
+[2025-03-28 16:01:43.930] [info] Decode image time : 0ms
+[2025-03-28 16:01:43.938] [info] Ocr  : I love Aris
+[2025-03-28 16:01:43.938] [info] Time : 8ms
+[2025-03-28 16:01:43.938] [info] OCR time : 8ms
+[2025-03-28 16:01:43.943] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:43.943] [info] <<< Request Body >>>
+[2025-03-28 16:01:43.943] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:43.943] [info] Pass method : post file
+[2025-03-28 16:01:43.944] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.091] [info] Ocr  : "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --build C:\Users\pc\Desktop\work\c\BAAS_Cpp\cmake-build-release --target BAAS_ocr_server -j 30
+[2025-03-28 16:01:44.091] [info] Time : 147ms
+[2025-03-28 16:01:44.091] [info] OCR time : 147ms
+[2025-03-28 16:01:44.094] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.094] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.094] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:44.094] [info] Pass method : post file
+[2025-03-28 16:01:44.094] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.103] [info] Ocr  : How are you today?
+[2025-03-28 16:01:44.104] [info] Time : 9ms
+[2025-03-28 16:01:44.104] [info] OCR time : 9ms
+[2025-03-28 16:01:44.106] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.106] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.106] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:44.106] [info] Pass method : post file
+[2025-03-28 16:01:44.106] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.118] [info] Ocr  : I enjoy listening to music.
+[2025-03-28 16:01:44.118] [info] Time : 12ms
+[2025-03-28 16:01:44.118] [info] OCR time : 12ms
+[2025-03-28 16:01:44.121] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.121] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.121] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:44.121] [info] Pass method : post file
+[2025-03-28 16:01:44.121] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.132] [info] Ocr  : Where do you live?
+[2025-03-28 16:01:44.132] [info] Time : 10ms
+[2025-03-28 16:01:44.132] [info] OCR time : 10ms
+[2025-03-28 16:01:44.134] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.134] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.134] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:44.134] [info] Pass method : post file
+[2025-03-28 16:01:44.134] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.145] [info] Ocr  : I'm learning English. 
+[2025-03-28 16:01:44.145] [info] Time : 11ms
+[2025-03-28 16:01:44.145] [info] OCR time : 11ms
+[2025-03-28 16:01:44.149] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.149] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.149] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:44.149] [info] Pass method : post file
+[2025-03-28 16:01:44.150] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.165] [info] Ocr  : The .concept of Dinds ot
+[2025-03-28 16:01:44.165] [info] Time : 15ms
+[2025-03-28 16:01:44.165] [info] OCR time : 15ms
+[2025-03-28 16:01:44.169] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.169] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.169] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:44.169] [info] Pass method : post file
+[2025-03-28 16:01:44.170] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.179] [info] Ocr  : I long time ago
+[2025-03-28 16:01:44.179] [info] Time : 9ms
+[2025-03-28 16:01:44.179] [info] OCR time : 9ms
+[2025-03-28 16:01:44.181] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.181] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.181] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.181] [info] Pass method : post file
+[2025-03-28 16:01:44.182] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.225] [info] Ocr  : アリスが大好きです
+[2025-03-28 16:01:44.225] [info] Time : 43ms
+[2025-03-28 16:01:44.225] [info] OCR time : 43ms
+[2025-03-28 16:01:44.228] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.228] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.228] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.228] [info] Pass method : post file
+[2025-03-28 16:01:44.228] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.234] [info] Ocr  : プルアカ
+[2025-03-28 16:01:44.234] [info] Time : 5ms
+[2025-03-28 16:01:44.234] [info] OCR time : 5ms
+[2025-03-28 16:01:44.236] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.236] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.236] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.236] [info] Pass method : post file
+[2025-03-28 16:01:44.236] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.244] [info] Ocr  : 確認しました
+[2025-03-28 16:01:44.244] [info] Time : 8ms
+[2025-03-28 16:01:44.244] [info] OCR time : 8ms
+[2025-03-28 16:01:44.246] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.246] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.246] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.246] [info] Pass method : post file
+[2025-03-28 16:01:44.246] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.273] [info] Ocr  : 今日は玄龍門に来てもらう予定だった
+[2025-03-28 16:01:44.273] [info] Time : 26ms
+[2025-03-28 16:01:44.273] [info] OCR time : 26ms
+[2025-03-28 16:01:44.275] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.275] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.275] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.275] [info] Pass method : post file
+[2025-03-28 16:01:44.276] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.296] [info] Ocr  : 任務Hard報酎州2倍キャンペーン！
+[2025-03-28 16:01:44.296] [info] Time : 20ms
+[2025-03-28 16:01:44.296] [info] OCR time : 20ms
+[2025-03-28 16:01:44.299] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.299] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.299] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.299] [info] Pass method : post file
+[2025-03-28 16:01:44.300] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.358] [info] Ocr  : カフェ・スケジュール生徒・編成・ソーシャル・製造・ーショップー募集
+[2025-03-28 16:01:44.358] [info] Time : 58ms
+[2025-03-28 16:01:44.358] [info] OCR time : 58ms
+[2025-03-28 16:01:44.362] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.362] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.362] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.362] [info] Pass method : post file
+[2025-03-28 16:01:44.362] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.394] [info] Ocr  : 学園交流会戦術対抗戦制約解除決戦
+[2025-03-28 16:01:44.394] [info] Time : 31ms
+[2025-03-28 16:01:44.394] [info] OCR time : 31ms
+[2025-03-28 16:01:44.398] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.398] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.398] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:44.398] [info] Pass method : post file
+[2025-03-28 16:01:44.399] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.426] [info] Ocr  : "誰か一杯でいいから、コーヒーを入れてくれないかな・。"
+[2025-03-28 16:01:44.426] [info] Time : 26ms
+[2025-03-28 16:01:44.426] [info] OCR time : 26ms
+[2025-03-28 16:01:44.428] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.428] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.428] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ko-kr"
+}
+[2025-03-28 16:01:44.428] [info] Pass method : post file
+[2025-03-28 16:01:44.429] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.466] [info] Ocr  : 나는엘리스를사랑한대
+[2025-03-28 16:01:44.466] [info] Time : 37ms
+[2025-03-28 16:01:44.466] [info] OCR time : 37ms
+[2025-03-28 16:01:44.469] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.469] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.469] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ru-ru"
+}
+[2025-03-28 16:01:44.469] [info] Pass method : post file
+[2025-03-28 16:01:44.469] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.503] [info] Ocr  : ялюблюэлис
+[2025-03-28 16:01:44.503] [info] Time : 33ms
+[2025-03-28 16:01:44.503] [info] OCR time : 33ms
+[2025-03-28 16:01:44.509] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.509] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.509] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ru-ru"
+}
+[2025-03-28 16:01:44.509] [info] Pass method : post file
+[2025-03-28 16:01:44.510] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.531] [info] Ocr  : Tы rовopишb no-pycckи?
+[2025-03-28 16:01:44.531] [info] Time : 21ms
+[2025-03-28 16:01:44.531] [info] OCR time : 21ms
+[2025-03-28 16:01:44.533] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.533] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.533] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "ru-ru"
+}
+[2025-03-28 16:01:44.533] [info] Pass method : post file
+[2025-03-28 16:01:44.534] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.542] [info] Ocr  : A kИby B MockBe.
+[2025-03-28 16:01:44.542] [info] Time : 8ms
+[2025-03-28 16:01:44.542] [info] OCR time : 8ms
+[2025-03-28 16:01:44.544] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.544] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.544] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:44.544] [info] Pass method : post file
+[2025-03-28 16:01:44.544] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.583] [info] Ocr  : 我爱爱丽丝
+[2025-03-28 16:01:44.583] [info] Time : 38ms
+[2025-03-28 16:01:44.583] [info] OCR time : 38ms
+[2025-03-28 16:01:44.586] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.586] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.586] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:44.586] [info] Pass method : post file
+[2025-03-28 16:01:44.586] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.618] [info] Ocr  : [在字符串、注释和文本中] 代码中的引用(在 2 个文件中 3 个引用)
+[2025-03-28 16:01:44.618] [info] Time : 31ms
+[2025-03-28 16:01:44.618] [info] OCR time : 31ms
+[2025-03-28 16:01:44.623] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.623] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.623] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:44.623] [info] Pass method : post file
+[2025-03-28 16:01:44.624] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.664] [info] Ocr  : 公安部正在修改户籍改草文件报国务院审批，日前已启幼对户
+[2025-03-28 16:01:44.664] [info] Time : 39ms
+[2025-03-28 16:01:44.664] [info] OCR time : 39ms
+[2025-03-28 16:01:44.669] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.669] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.669] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:44.669] [info] Pass method : post file
+[2025-03-28 16:01:44.670] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.699] [info] Ocr  : 变卡辨瓣遍林腺表營感彬娥濒演
+[2025-03-28 16:01:44.699] [info] Time : 29ms
+[2025-03-28 16:01:44.699] [info] OCR time : 29ms
+[2025-03-28 16:01:44.703] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.703] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.703] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:44.703] [info] Pass method : post file
+[2025-03-28 16:01:44.703] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.738] [info] Ocr  : 我爱爱丽丝
+[2025-03-28 16:01:44.738] [info] Time : 35ms
+[2025-03-28 16:01:44.738] [info] OCR time : 35ms
+[2025-03-28 16:01:44.743] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.743] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.743] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:44.743] [info] Pass method : post file
+[2025-03-28 16:01:44.744] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.781] [info] Ocr  : [在字符串、注释和文本中] 代码中的引用 （在 2 个文件中 3 个引用)
+[2025-03-28 16:01:44.781] [info] Time : 36ms
+[2025-03-28 16:01:44.781] [info] OCR time : 36ms
+[2025-03-28 16:01:44.785] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.785] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.785] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:44.785] [info] Pass method : post file
+[2025-03-28 16:01:44.786] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.818] [info] Ocr  : 公安部正在修改户籍孜革文件报国务院审抛，目前已启幼对产
+[2025-03-28 16:01:44.818] [info] Time : 31ms
+[2025-03-28 16:01:44.818] [info] OCR time : 31ms
+[2025-03-28 16:01:44.823] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.823] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.823] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:44.823] [info] Pass method : post file
+[2025-03-28 16:01:44.824] [info] Decode image time : 1ms
+[2025-03-28 16:01:44.847] [info] Ocr  : 更卡静裤 辩 避 林影腺 表 整 别 疮谢斌疾
+[2025-03-28 16:01:44.847] [info] Time : 23ms
+[2025-03-28 16:01:44.847] [info] OCR time : 23ms
+[2025-03-28 16:01:44.850] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.850] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.850] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:44.850] [info] Pass method : post file
+[2025-03-28 16:01:44.850] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.887] [info] Ocr  : 我愛愛麗絲
+[2025-03-28 16:01:44.887] [info] Time : 36ms
+[2025-03-28 16:01:44.887] [info] OCR time : 36ms
+[2025-03-28 16:01:44.893] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.893] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.893] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:44.893] [info] Pass method : post file
+[2025-03-28 16:01:44.893] [info] Decode image time : 0ms
+[2025-03-28 16:01:44.959] [info] Ocr  : 確控制記憶體中數據的位置，或控制某些函式接收參數的方式·指示卻raa詞提供每個編譯
+[2025-03-28 16:01:44.959] [info] Time : 66ms
+[2025-03-28 16:01:44.959] [info] OCR time : 66ms
+[2025-03-28 16:01:44.962] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:44.962] [info] <<< Request Body >>>
+[2025-03-28 16:01:44.962] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:44.962] [info] Pass method : post file
+[2025-03-28 16:01:44.963] [info] Decode image time : 1ms
+[2025-03-28 16:01:45.010] [info] Ocr  : （選擇性）將名稱的值設定寫內部編譯程式堆腫頂端的值，然後彈出堆腫·如果使用指定p
+[2025-03-28 16:01:45.010] [info] Time : 47ms
+[2025-03-28 16:01:45.010] [info] OCR time : 47ms
+[2025-03-28 16:01:45.013] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.013] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.013] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 1
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:45.013] [info] Pass method : post file
+[2025-03-28 16:01:45.014] [info] Decode image time : 1ms
+[2025-03-28 16:01:45.056] [info] Ocr  : （選擇性）可以包含在或pusn命令中pop·如果使用標識碼·o也可以使用或off規
+[2025-03-28 16:01:45.056] [info] Time : 42ms
+[2025-03-28 16:01:45.056] [info] OCR time : 42ms
+[2025-03-28 16:01:45.058] [info] <<< Ocr Create Shared Memory >>>
+[2025-03-28 16:01:45.058] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.058] [info] 
+{
+    "shared_memory_name": "/test",
+    "size": 2764800
+}
+[2025-03-28 16:01:45.060] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.060] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.060] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            107,
+            34
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.060] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.060] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.083] [info] Ocr  : I love Aris
+[2025-03-28 16:01:45.083] [info] Time : 22ms
+[2025-03-28 16:01:45.083] [info] OCR time : 22ms
+[2025-03-28 16:01:45.090] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.090] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.090] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            2230,
+            37
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.090] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.090] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.199] [info] Ocr  : "C:\Program Files\JetBrains\CLion 2024.1.4\bin\cmake\win\x64\bin\cmake.exe" --build C:\Users\pc\Desktop\work\c\BAAS_Cpp\cmake-build-release --target BAAS_ocr_server -j 30
+[2025-03-28 16:01:45.199] [info] Time : 108ms
+[2025-03-28 16:01:45.199] [info] OCR time : 108ms
+[2025-03-28 16:01:45.202] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.202] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.202] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            177,
+            41
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.202] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.202] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.211] [info] Ocr  : How are you today?
+[2025-03-28 16:01:45.211] [info] Time : 8ms
+[2025-03-28 16:01:45.211] [info] OCR time : 8ms
+[2025-03-28 16:01:45.213] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.213] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.213] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            231,
+            35
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.213] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.213] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.224] [info] Ocr  : I enjoy listening to music.
+[2025-03-28 16:01:45.224] [info] Time : 11ms
+[2025-03-28 16:01:45.224] [info] OCR time : 11ms
+[2025-03-28 16:01:45.226] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.226] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.226] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            172,
+            31
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.226] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.226] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.236] [info] Ocr  : Where do you live?
+[2025-03-28 16:01:45.236] [info] Time : 10ms
+[2025-03-28 16:01:45.236] [info] OCR time : 10ms
+[2025-03-28 16:01:45.238] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.238] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.238] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            185,
+            30
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.238] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.238] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.248] [info] Ocr  : I'm learning English. 
+[2025-03-28 16:01:45.248] [info] Time : 10ms
+[2025-03-28 16:01:45.248] [info] OCR time : 10ms
+[2025-03-28 16:01:45.250] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.250] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.250] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            440,
+            55
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.250] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.250] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.269] [info] Ocr  : The .concept of Dinds ot
+[2025-03-28 16:01:45.269] [info] Time : 19ms
+[2025-03-28 16:01:45.269] [info] OCR time : 19ms
+[2025-03-28 16:01:45.272] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.272] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.272] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            275,
+            60
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "en-us"
+}
+[2025-03-28 16:01:45.272] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.272] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.280] [info] Ocr  : I long time ago
+[2025-03-28 16:01:45.280] [info] Time : 8ms
+[2025-03-28 16:01:45.280] [info] OCR time : 8ms
+[2025-03-28 16:01:45.282] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.282] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.282] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            204,
+            42
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.282] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.282] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.313] [info] Ocr  : アリスが大好きです
+[2025-03-28 16:01:45.313] [info] Time : 30ms
+[2025-03-28 16:01:45.313] [info] OCR time : 30ms
+[2025-03-28 16:01:45.315] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.315] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.315] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            54,
+            21
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.315] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.315] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.335] [info] Ocr  : プルアカ
+[2025-03-28 16:01:45.335] [info] Time : 19ms
+[2025-03-28 16:01:45.335] [info] OCR time : 19ms
+[2025-03-28 16:01:45.339] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.339] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.339] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            95,
+            24
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.339] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.339] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.352] [info] Ocr  : 確認しました
+[2025-03-28 16:01:45.352] [info] Time : 12ms
+[2025-03-28 16:01:45.352] [info] OCR time : 12ms
+[2025-03-28 16:01:45.354] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.354] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.354] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            320,
+            25
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.354] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.354] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.377] [info] Ocr  : 今日は玄龍門に来てもらう予定だった
+[2025-03-28 16:01:45.377] [info] Time : 22ms
+[2025-03-28 16:01:45.377] [info] OCR time : 22ms
+[2025-03-28 16:01:45.379] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.379] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.379] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            388,
+            36
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.379] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.379] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.398] [info] Ocr  : 任務Hard報酎州2倍キャンペーン！
+[2025-03-28 16:01:45.398] [info] Time : 19ms
+[2025-03-28 16:01:45.398] [info] OCR time : 19ms
+[2025-03-28 16:01:45.401] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.401] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.401] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            884,
+            35
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.401] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.401] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.444] [info] Ocr  : カフェ・スケジュール生徒・編成・ソーシャル・製造・ーショップー募集
+[2025-03-28 16:01:45.444] [info] Time : 43ms
+[2025-03-28 16:01:45.444] [info] OCR time : 43ms
+[2025-03-28 16:01:45.447] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.447] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.447] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            507,
+            29
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.447] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.447] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.476] [info] Ocr  : 学園交流会戦術対抗戦制約解除決戦
+[2025-03-28 16:01:45.476] [info] Time : 29ms
+[2025-03-28 16:01:45.476] [info] OCR time : 29ms
+[2025-03-28 16:01:45.479] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.479] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.479] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            819,
+            54
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ja-jp"
+}
+[2025-03-28 16:01:45.479] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.479] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.505] [info] Ocr  : "誰か一杯でいいから、コーヒーを入れてくれないかな・。"
+[2025-03-28 16:01:45.505] [info] Time : 26ms
+[2025-03-28 16:01:45.505] [info] OCR time : 26ms
+[2025-03-28 16:01:45.508] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.508] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.508] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            244,
+            33
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ko-kr"
+}
+[2025-03-28 16:01:45.508] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.508] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.535] [info] Ocr  : 나는엘리스를사랑한대
+[2025-03-28 16:01:45.535] [info] Time : 27ms
+[2025-03-28 16:01:45.535] [info] OCR time : 27ms
+[2025-03-28 16:01:45.537] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.537] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.537] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            177,
+            30
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ru-ru"
+}
+[2025-03-28 16:01:45.537] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.537] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.571] [info] Ocr  : ялюблюэлис
+[2025-03-28 16:01:45.571] [info] Time : 33ms
+[2025-03-28 16:01:45.571] [info] OCR time : 33ms
+[2025-03-28 16:01:45.576] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.576] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.576] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            229,
+            27
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ru-ru"
+}
+[2025-03-28 16:01:45.576] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.576] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.615] [info] Ocr  : Tы rовopишb no-pycckи?
+[2025-03-28 16:01:45.615] [info] Time : 38ms
+[2025-03-28 16:01:45.615] [info] OCR time : 38ms
+[2025-03-28 16:01:45.617] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.617] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.617] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            164,
+            39
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "ru-ru"
+}
+[2025-03-28 16:01:45.617] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.617] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.625] [info] Ocr  : A kИby B MockBe.
+[2025-03-28 16:01:45.625] [info] Time : 8ms
+[2025-03-28 16:01:45.625] [info] OCR time : 8ms
+[2025-03-28 16:01:45.627] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.627] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.627] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            118,
+            34
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:45.627] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.627] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.656] [info] Ocr  : 我爱爱丽丝
+[2025-03-28 16:01:45.656] [info] Time : 28ms
+[2025-03-28 16:01:45.656] [info] OCR time : 28ms
+[2025-03-28 16:01:45.660] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.660] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.660] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            556,
+            39
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:45.661] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.661] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.708] [info] Ocr  : [在字符串、注释和文本中] 代码中的引用(在 2 个文件中 3 个引用)
+[2025-03-28 16:01:45.708] [info] Time : 47ms
+[2025-03-28 16:01:45.708] [info] OCR time : 47ms
+[2025-03-28 16:01:45.711] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.711] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.711] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            786,
+            47
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:45.711] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.711] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.762] [info] Ocr  : 公安部正在修改户籍改草文件报国务院审批，日前已启幼对户
+[2025-03-28 16:01:45.762] [info] Time : 50ms
+[2025-03-28 16:01:45.762] [info] OCR time : 50ms
+[2025-03-28 16:01:45.765] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.765] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.765] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            746,
+            60
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn"
+}
+[2025-03-28 16:01:45.765] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.765] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.791] [info] Ocr  : 变卡辨瓣遍林腺表營感彬娥濒演
+[2025-03-28 16:01:45.791] [info] Time : 26ms
+[2025-03-28 16:01:45.791] [info] OCR time : 26ms
+[2025-03-28 16:01:45.793] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.793] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.793] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            118,
+            34
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:45.793] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.793] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.830] [info] Ocr  : 我爱爱丽丝
+[2025-03-28 16:01:45.830] [info] Time : 36ms
+[2025-03-28 16:01:45.830] [info] OCR time : 36ms
+[2025-03-28 16:01:45.832] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.832] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.832] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            556,
+            39
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:45.832] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.832] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.864] [info] Ocr  : [在字符串、注释和文本中] 代码中的引用 （在 2 个文件中 3 个引用)
+[2025-03-28 16:01:45.864] [info] Time : 31ms
+[2025-03-28 16:01:45.864] [info] OCR time : 31ms
+[2025-03-28 16:01:45.867] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.867] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.867] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            786,
+            47
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:45.867] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.867] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.897] [info] Ocr  : 公安部正在修改户籍孜革文件报国务院审抛，目前已启幼对产
+[2025-03-28 16:01:45.897] [info] Time : 29ms
+[2025-03-28 16:01:45.897] [info] OCR time : 29ms
+[2025-03-28 16:01:45.899] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.899] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.899] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            746,
+            60
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-cn_v3"
+}
+[2025-03-28 16:01:45.899] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.899] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.922] [info] Ocr  : 更卡静裤 辩 避 林影腺 表 整 别 疮谢斌疾
+[2025-03-28 16:01:45.922] [info] Time : 22ms
+[2025-03-28 16:01:45.922] [info] OCR time : 22ms
+[2025-03-28 16:01:45.924] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.924] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.924] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            84,
+            21
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:45.924] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.924] [info] Decode image time : 0ms
+[2025-03-28 16:01:45.953] [info] Ocr  : 我愛愛麗絲
+[2025-03-28 16:01:45.953] [info] Time : 29ms
+[2025-03-28 16:01:45.953] [info] OCR time : 29ms
+[2025-03-28 16:01:45.957] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:45.957] [info] <<< Request Body >>>
+[2025-03-28 16:01:45.957] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            679,
+            24
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:45.957] [info] Pass method : shared_memory
+[2025-03-28 16:01:45.957] [info] Decode image time : 0ms
+[2025-03-28 16:01:46.020] [info] Ocr  : 確控制記憶體中數據的位置，或控制某些函式接收參數的方式·指示卻raa詞提供每個編譯
+[2025-03-28 16:01:46.020] [info] Time : 62ms
+[2025-03-28 16:01:46.020] [info] OCR time : 62ms
+[2025-03-28 16:01:46.023] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:46.023] [info] <<< Request Body >>>
+[2025-03-28 16:01:46.023] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            681,
+            32
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:46.023] [info] Pass method : shared_memory
+[2025-03-28 16:01:46.023] [info] Decode image time : 0ms
+[2025-03-28 16:01:46.062] [info] Ocr  : （選擇性）將名稱的值設定寫內部編譯程式堆腫頂端的值，然後彈出堆腫·如果使用指定p
+[2025-03-28 16:01:46.062] [info] Time : 38ms
+[2025-03-28 16:01:46.062] [info] OCR time : 38ms
+[2025-03-28 16:01:46.064] [info] <<< OCR for single line >>>
+[2025-03-28 16:01:46.064] [info] <<< Request Body >>>
+[2025-03-28 16:01:46.064] [info] 
+{
+    "candidates": "",
+    "image": {
+        "pass_method": 0,
+        "resolution": [
+            640,
+            30
+        ],
+        "shared_memory_name": "/test"
+    },
+    "language": "zh-tw"
+}
+[2025-03-28 16:01:46.064] [info] Pass method : shared_memory
+[2025-03-28 16:01:46.064] [info] Decode image time : 0ms
+[2025-03-28 16:01:46.106] [info] Ocr  : （選擇性）可以包含在或pusn命令中pop·如果使用標識碼·o也可以使用或off規
+[2025-03-28 16:01:46.106] [info] Time : 41ms
+[2025-03-28 16:01:46.106] [info] OCR time : 41ms
+[2025-03-28 16:01:46.108] [info] <<< Ocr Release Shared Memory >>>
+[2025-03-28 16:01:46.108] [info] <<< Request Body >>>
+[2025-03-28 16:01:46.108] [info] 
+{
+    "shared_memory_name": "/test"
+}
+[2025-03-28 16:01:46.109] [info] Input : exit
+[2025-03-28 16:01:46.109] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:46.109] [info] |                               Shutdown Server.                               |
+[2025-03-28 16:01:46.109] [info] --------------------------------------------------------------------------------
+[2025-03-28 16:01:46.110] [info] <<< OCR Lite Release All >>>
+[2025-03-28 16:01:46.110] [info] <<< Det Release All >>>
+[2025-03-28 16:01:46.112] [info] Det Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv3_det_infer.onnx
+[2025-03-28 16:01:46.115] [info] Det Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv4_det_infer.onnx
+[2025-03-28 16:01:46.115] [info] DbNet map size : 0
+[2025-03-28 16:01:46.115] [info] <<< Cls Release All >>>
+[2025-03-28 16:01:46.117] [info] Cls Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_ppocr_mobile_v2.0_cls_infer.onnx
+[2025-03-28 16:01:46.117] [info] Angle map size : 0
+[2025-03-28 16:01:46.117] [info] <<< Rec Release All >>>
+[2025-03-28 16:01:46.121] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/ch_PP-OCRv3_rec_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese.txt
+[2025-03-28 16:01:46.126] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_ch_PP-OCRv4_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese.txt
+[2025-03-28 16:01:46.128] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_chinese_cht_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_chinese_cht.txt
+[2025-03-28 16:01:46.130] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_cyrillic_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_cyrillic.txt
+[2025-03-28 16:01:46.132] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_en_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_en.txt
+[2025-03-28 16:01:46.135] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_japan_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_japan.txt
+[2025-03-28 16:01:46.137] [info] Rec Release : /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/rec_korean_PP-OCRv3_infer.onnx | /home/runner/work/baas_cpp/baas_cpp/baas_cpp/build/bin/resource/ocr_models/dict_korean.txt
+[2025-03-28 16:01:46.137] [info] CrnnNet map size : 0
+[2025-03-28 16:01:46.137] [info] <<< Logger Shutdown >>>
